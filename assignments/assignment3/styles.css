@@ -1,4 +1,5 @@
 /* Structure */
+
 #main-body {
     margin: 0;
 }
@@ -7,10 +8,12 @@
     background-color: black;
     position: sticky;
     top: 0;
+    margin: 0;
+    z-index: 10;
 }
 
 #main-content {
-    background-color:cornflowerblue;
+    background-color:white;
 }
 h1 {
     font-family: "Berlingske Sans Extracondensed", "Impact", sans-serif;
@@ -88,6 +91,80 @@ h2, h3, p {
 
 #navigation-bar a {
     text-decoration: none;
+}
+
+
+
+
+
+#researcher {
+    width: 100%;
+    max-height: 600;
+    object-fit: cover;
+}
+
+#research-title {
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 76px;
+    letter-spacing: 1.6px;
+    background-color: #73000A;
+    color: white;
+    margin-top: -5%;
+    margin-left: 4%;
+    margin-right: 8%;
+    position: relative;
+}
+
+#main-content h3, p {
+    margin: 7%;
+    line-height: 200%;
+}
+
+#main-content h3 {
+    line-height: 300%;
+}
+
+.image-text-card {
+    display:flex;
+    flex-direction: row;
+    max-height: 70%;
+}
+
+.image-text-card img {
+    height: auto;
+    width: 60%
+}
+
+.image-text-card button {
+    border: none;
+    background-color: #73000A;
+    color: white;
+    padding: 15px;
+    font-size: larger;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.text-card {
+    border: 6%;
+    color: white;
+    flex: 1;
+    padding: 4%;
+    padding-bottom: 8%;
+}
+
+#remarkable-text {
+    background-color: #73000A;
+}
+#remarkable-text h2 {
+    font-size: 50px;
+}
+#built-text {
+    background-color: black;
+}
+#built-text h3 {
+    font-size: 50px;
 }
 
 /* Typography */
