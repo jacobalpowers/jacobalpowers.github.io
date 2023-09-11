@@ -1,218 +1,84 @@
 /* Structure */
-
-#main-body {
-    margin: 0;
-}
-
-#mainnav {
-    background-color: black;
-    position: sticky;
-    top: 0;
-    margin: 0;
-    z-index: 10;
-}
-
-#main-content {
-    background-color:white;
-}
 h1 {
-    font-family: "Berlingske Sans Extracondensed", "Impact", sans-serif;
-}
-h2, h3, p {
-    font-family: "Berlingske Sans", "Arial", sans-serif;
-}
-
-.logo {
-    height: 40px;
-    width: 180px;
-    background-color: black;
-}
-
-/* Navigation */
-
-#banner ul {
-    padding-left: 0;
-    display: none;
-}
-
-#banner ul >*:nth-child(n+6):after {
-    padding-left: 6px;
-    content: "|";
-    position:absolute;
-    width: 1px;
-    color: white;
-}
-
-#banner li {
-    font-family: "Berlingske Sans", "Arial", sans-serif;
-    font-size: .625rem;
-    padding: 0.75em;
-    text-transform: uppercase;
-    list-style-type: none;
-}
-
-#banner a {
-    text-decoration: none;
-}
-
-#search-bar {
-    display: none;
-    margin-right: 15px;
-    margin-top: 10px;
-    border: solid white 1px;
-}
-
-#search-bar input {
-    background-color: black;
-    color: white;
-    border: none;
-    font-family: "Berlingske Sans", "Arial", sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-#navigation-bar ul {
-    padding-left: 0;
-    display: none;
-}
-
-#navigation-bar li {
-    list-style-type: none;
-    background-color: #73000A;
-    font-family: "Berlingske Sans Extracondensed", "Impact", sans-serif;
-    font-size: 1.25rem;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    padding: 14.5px;
-    white-space: nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-#navigation-bar a {
-    text-decoration: none;
-}
-
-
-
-
-
-#researcher {
-    width: 100%;
-    max-height: 600;
-    object-fit: cover;
-}
-
-#research-title {
-    font-weight: 200;
-    text-transform: uppercase;
-    font-size: 76px;
-    letter-spacing: 1.6px;
-    background-color: #73000A;
-    color: white;
-    margin-top: -5%;
-    margin-left: 4%;
-    margin-right: 8%;
-    position: relative;
-}
-
-#main-content h3, p {
-    margin: 7%;
-    line-height: 200%;
-}
-
-#main-content h3 {
-    line-height: 300%;
-}
-
-.image-text-card {
-    display:flex;
-    flex-direction: row;
-    max-height: 70%;
-}
-
-.image-text-card img {
-    height: auto;
-    width: 60%
-}
-
-.image-text-card button {
-    border: none;
-    background-color: #73000A;
-    color: white;
-    padding: 15px;
-    font-size: larger;
-    text-transform: uppercase;
-    white-space: nowrap;
-}
-
-.text-card {
-    border: 6%;
-    color: white;
-    flex: 1;
-    padding: 4%;
-    padding-bottom: 8%;
-}
-
-#remarkable-text {
-    background-color: #73000A;
-}
-#remarkable-text h2 {
-    font-size: 50px;
-}
-#built-text {
-    background-color: black;
-}
-#built-text h3 {
-    font-size: 50px;
-}
-
-/* Typography */
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#mainheader h1 {
     text-align: center;
 }
 
-/* Desktop Size */
-@media (min-width: 966px) {
-    /* Structure */
-    
 
 
-    /* Typography */
 
-    #mainnav .logo {
-        height: 60px;
-        width: 310px;
-    }
+/* Navigation */
 
-    /* Navigation */
-    #banner ul {
-        display: flex;
-        flex-direction: row;
-        top: 0;
-        right: 0;
-        position:absolute;
-        margin: 0;
-    }
-
-    #search-bar {
-        display:flex;
-        position:absolute;
-        right: 0;
-        top: 30px;
-    }
-
-    #navigation-bar ul{
-        display: flex;
-        flex-direction: row;
-    }
-
-    #navigation-bar li {
-        flex: 8;
-    } 
+#nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
 }
+#nav-bar li {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    list-style: none;
+    padding: 20px;
+}
+#nav-bar a {
+    text-decoration: none;
+}
+
+#first-content {
+    display:flex;
+    flex-direction: row;
+}
+.top-and-bottom {
+    background-color: lightblue;
+    color: black;
+    flex: 1;
+    margin: 10px;
+}
+.top-and-bottom h2 {
+    font-size: large;
+    padding-bottom: 20px;
+    margin: 10px;
+}
+.top-and-bottom p {
+    margin: 10px;
+}
+#main-content {
+    flex: 2;
+}
+#side-bar {
+    flex: 1;
+}
+
+#columns {
+    display: flex;
+    flex-direction: row;
+}
+.cols {
+    flex: 1;
+    background-color: lightgreen;
+    color: black;
+    margin: 10px
+}
+.cols h2 {
+    margin: 10px;
+
+}
+.cols ul {
+    display: flex;
+    color: white;
+    padding-inline-start: 0px;
+}
+.cols li {
+    background-color:royalblue;
+    color: white;
+    border: blue solid 1px;
+    list-style: none;
+    padding: 4px;
+    margin: 8px;
+}
+
+
+
+
+/* Typography */
