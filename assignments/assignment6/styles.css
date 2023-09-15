@@ -1,0 +1,132 @@
+/** Structure **/
+h1 {
+    text-align: center;
+    background-color: tan;
+}
+
+#three-flex {
+    display: flex;
+    background-color: #6495ED;
+    flex-direction: column;
+}
+#three-flex h2 {
+    text-align: center;
+}
+.even-flexbox {
+    flex: 1;
+    background-color: #F0FFFF;
+    margin: 10px;
+}
+#hide-and-seek img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#three-flex button {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.align-input {
+    margin-left: 5px;
+}
+
+#comment-list {
+    display: flex;
+    flex-direction: column;
+}
+.comment-item {
+    flex: 1;
+    margin: 5px;
+    background-color: tan;
+    border: solid 1px #6495ED;
+}
+#comment-list h2 {
+    color: #73A3E5;
+    margin: 10px;
+    text-align: left;
+}
+#comment-list p {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+/** Navigation **/
+#animation #emoji {
+    
+    position: relative;
+    max-width: fit-content;
+    left:2px
+}
+.roll {
+    animation-name: roll;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+/** Emoji Animation **/
+@keyframes roll {
+    0% {
+        rotate: 0deg;
+        left: 2px;
+        top: 0px;
+    }
+    16% {
+        rotate: 120deg;
+        left: 10px;
+        top: 4px;
+    }
+    32% {
+        rotate: 240deg;
+        left: 20px;
+        top: 4px;
+    }
+    48% {
+        rotate: 360deg;
+        left: 30px;
+        top:0px
+    }
+    64% {
+        rotate: 240deg;
+        left: 20px;
+        top: 4px;
+    }
+    80% {
+        rotate: 120deg;
+        left: 10px;
+        top: 4px;
+    }
+    96% {
+        rotate: 0deg;
+        left: 2px;
+        top:0px
+    }
+}
+
+
+/** Typography **/
+
+
+@media (min-width: 641px) {
+    #three-flex {
+        flex-direction: row;
+    }
+    #hide-and-seek img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .align-input {
+        display: flex;
+        align-items: center;
+    }
+    .align-input label {
+        width: 120px;
+    }
+    .align-input input {
+        max-height: 16px;
+    }
+    .align-input #rating {
+        max-width: 25px;
+    }
+}
