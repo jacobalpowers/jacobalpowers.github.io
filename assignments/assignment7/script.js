@@ -1,4 +1,4 @@
-var complete = 0;
+var goal = 10000;
 
 const exercise_1_click = () => {
     const exercise1 = document.getElementById("exercise_1");
@@ -52,13 +52,11 @@ const is_blank = (data) => {
     return false;
 }
 const is_not_number = (data) => {
-    if (isNaN(data)) {
+    if (isNaN(data.trim())) {
         return true;
     }
     return false;
 }
-
-
 const compare_age = () => {
     const name1 = document.getElementById("name_1").value;
     const name2 = document.getElementById("name_2").value;
@@ -92,6 +90,27 @@ const compare_age = () => {
         }
     }
 }
+const display = () => {
+    const bar = document.getElementById("gradient_bar");
+    const funds = document.getElementById("funds_raised").value;
+
+    if (is_not_number(funds)) {
+        console.debug("Funds not number");
+        return false;
+    }
+
+    if (funds >= goal) {
+        bar.style.setProperty("--complete", 100 + "%");
+    } else if (funds >= goal * 0.75) {
+        bar.style.setProperty("--complete", 75 + "%");
+    } else if (funds >= goal * 0.5) {
+        bar.style.setProperty("--complete", 50 + "%");
+    } else if (funds >= goal * 0.25) {
+        bar.style.setProperty("--complete", 25 + "%");
+    } else {
+        bar.style.setProperty("--complete", 0 + "%");
+    }
+}
 
 
 window.onload = () => {
@@ -99,4 +118,5 @@ window.onload = () => {
     document.getElementById("exercise_2").onclick = exercise_2_click;
     document.getElementById("hamburger_menu").onclick = toggle_nav;
     document.getElementById("compare_ages").onclick = compare_age;
+    document.getElementById("display_funds").onclick = display;
 }

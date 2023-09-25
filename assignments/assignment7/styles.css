@@ -63,11 +63,11 @@ h1 {
 
 
 /** Gradients **/
-.gradient_bar {
+#gradient_bar {
     --complete: 0%;
     width: 100px;
     height: 500px;
-    background-image: linear-gradient(0deg, red 0%, white 0%);
+    background-image: linear-gradient(0deg, red var(--complete), white var(--complete));
     align-content: center;
     margin: auto;
 }
