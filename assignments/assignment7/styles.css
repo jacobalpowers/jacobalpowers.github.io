@@ -18,7 +18,7 @@ h1 {
     color: salmon;
     background-color: white;
     text-align: center;
-    border-bottom: 2px white solid;
+    border-bottom: 2px solid transparent;
 }
 .option h4 {
     margin: 5px;
@@ -46,10 +46,52 @@ h1 {
     display: table-cell;
 }
 
+#thermometer {
+    background-color: salmon;
+    margin: auto;
+    padding: 10px;
+    width: 60%;
+    display: none;
+}
+#thermometer h2 {
+    margin: 4px;
+}
+
 
 
 /** Navigation **/
 
 
+/** Gradients **/
+.gradient_bar {
+    width: 100px;
+    height: 500px;
+    background-image: linear-gradient(0deg, red 0%, white 0%);
+    align-content: center;
+    margin: auto;
+}
+
 /** Typography **/
 
+.hidden {
+    display: none !important;
+}
+
+
+@media (max-width: 899px) {
+    #exercises {
+        flex-direction: column;
+    }
+    .option {
+        margin-bottom: 4px;
+        background-color: lightgray;
+    }
+
+    /** Hamburger Menu **/
+    #hamburger_menu div {
+        width: 35px;
+        height: 5px;
+        background-color: gray;
+        margin: 6px;
+    }
+}
