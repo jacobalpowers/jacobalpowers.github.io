@@ -1,0 +1,55 @@
+/** Structure **/
+body {
+    margin: 0px;
+}
+h1 {
+    text-align: center;
+    color: #444A4C;
+    background-color: salmon;
+    margin: 0px;
+}
+
+#exercises {
+    display: flex;
+    margin-inline: 0px;
+}
+.option {
+    flex: 1;
+    color: salmon;
+    background-color: white;
+    text-align: center;
+    border-bottom: 2px white solid;
+}
+.option h4 {
+    margin: 5px;
+}
+
+#whos_the_oldest {
+    background-color: salmon;
+    margin: auto;
+    padding: 10px;
+    width: 60%;
+    display: table;
+}
+#whos_the_oldest h2 {
+    display: table-row;
+    white-space: nowrap;
+}
+.align-input {
+    display: table-row;
+}
+.align-input label {
+    padding-left: 10px;
+    display: table-cell;
+}
+.align-input input {
+    display: table-cell;
+}
+
+
+
+/** Navigation **/
+
+
+/** Typography **/
+
