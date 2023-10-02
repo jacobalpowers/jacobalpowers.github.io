@@ -1,0 +1,53 @@
+/** Structure **/
+body {
+    background-color: #333333;
+}
+
+#part-container {
+    display: flex;
+}
+.part-item {
+    flex: 1;
+}
+#running-man {
+    background-color: #3399FF;
+    align-items: center;
+    justify-content: center;
+}
+#running-man h2 {
+    text-align: center;
+    padding-top: 10px;
+}
+#running-man img {
+    width: 100px;
+}
+
+#thermometer {
+    background-color: #3399FF;
+    margin: auto;
+    padding: 10px;
+    width: 60%;
+}
+#thermometer h2 {
+    margin: 4px;
+}
+
+
+/** Navigation **/
+
+
+/** Gradients **/
+#gradient_bar {
+    --complete: 0%;
+    width: 100px;
+    height: 400px;
+    background-image: linear-gradient(0deg, red var(--complete), white var(--complete));
+    align-content: center;
+    margin: auto;
+}
+
+
+
+/** Typography **/
+
+
