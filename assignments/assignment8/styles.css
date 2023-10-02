@@ -19,6 +19,8 @@ body {
     padding-top: 10px;
 }
 #running-man img {
+    --position: 0%;
+    margin-left: var(--position);
     width: 100px;
 }
 
