@@ -1,0 +1,51 @@
+/** Structure **/
+body {
+    background-color: #EBEBEB;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+
+#assignments {
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.assignment-item {
+    background-color: #CAD2C5;
+    flex: 3 0 30%;
+    margin: 5px;
+    padding: 2px;
+    align-items: center;
+    text-align: center;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.assignment-item img {
+    width: 300px;
+    height: 150px;
+}
+
+/** Navigation **/
+
+
+
+
+/** Typography **/
+
+
+/** Small Displays **/
+@media (max-width: 1109px) {
+    #assignments {
+        flex-direction: column;
+        align-items: center;
+    }
+}
