@@ -5,19 +5,40 @@ body {
 #items {
     background-color: cadetblue;
 }
+h1 {
+    text-align: center;
+}
+p {
+    margin-inline: 5px;
+}
 #toy-list {
     display: flex;
+    flex-wrap: wrap;
 }
 .toy-item {
     background-color: white;
-    flex: 3;
+    flex: 3 0 30%;
+    display: flex;
     margin: 5px;
     padding: 2px;
-    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 .toy-item img {
-    max-width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    flex: 1;
+}
+.description {
+    position: absolute;
+    margin: auto;
+    display: none;
+}
+.flex {
+    display: flex;
 }
 
 
@@ -28,9 +49,18 @@ body {
 /** Typography **/
 .bold {
     font-weight: bold;
-    white-space: nowrap;
+    font-size: 24px;
 }
 .value {
-    display: inline-block;
+    font-size: 24px;
 }
 
+/** Hover **/
+.toy-item:hover {
+    .description {
+        display:inline;
+    }
+    img {
+        opacity: 20%;
+    }
+}
