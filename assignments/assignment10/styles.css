@@ -1,0 +1,36 @@
+/** Structure **/
+body {
+    background-color: rgb(85, 85, 85);
+}
+#items {
+    background-color: cadetblue;
+}
+#toy-list {
+    display: flex;
+}
+.toy-item {
+    background-color: white;
+    flex: 3;
+    margin: 5px;
+    padding: 2px;
+    display: inline-block;
+}
+.toy-item img {
+    max-width: 200px;
+    height: 200px;
+}
+
+
+
+/** Navigation **/
+
+
+/** Typography **/
+.bold {
+    font-weight: bold;
+    white-space: nowrap;
+}
+.value {
+    display: inline-block;
+}
+
