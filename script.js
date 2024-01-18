@@ -49,7 +49,7 @@ window.onload = () => {
         "Assignment 3 - Page Layout", 
         "assignments/assignment3/index.html", 
         "assignment3.png", 
-        "This assignmnet was designed to teach students about flexboxes and the complex dynamic displays that can be created with them."));
+        "This assignment was designed to teach students about flexboxes and the complex dynamic displays that can be created with them."));
     assignments.push(new Assignment(
         "Assignment 4 - Main Page CSS", 
         "assignments/assignment4/index.html", 
