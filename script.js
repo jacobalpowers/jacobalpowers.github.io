@@ -50,7 +50,7 @@ window.onload = () => {
         "assignments/assignment3/index.html", 
         "assignment3.png", 
         "This assignment was designed to teach students about flexboxes and the complex dynamic displays that can be created with them."));
-    assignments.push(new Assignment(
+    /*assignments.push(new Assignment(
         "Assignment 4 - Main Page CSS", 
         "assignments/assignment4/index.html", 
         "assignment4.png", 
@@ -84,7 +84,7 @@ window.onload = () => {
         "Assignment 10 - Classes", 
         "assignments/assignment10/index.html", 
         "assignment10.png", 
-        "This assignment was designed to introduce students to the concept of classes within JS, and the implementation available to us with their use."));
+        "This assignment was designed to introduce students to the concept of classes within JS, and the implementation available to us with their use."));*/
 
 
 
