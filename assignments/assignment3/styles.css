@@ -13,6 +13,7 @@ h1, h2, h3, h4 {
     justify-content: center;
     margin: 20px;
     padding-inline-start: 0;
+    
 }
 #nav-bar li {
     background-color: gray;
@@ -20,20 +21,21 @@ h1, h2, h3, h4 {
     text-align: center;
     list-style: none;
     padding: 20px;
+    border: blue solid 1px;
 }
 #nav-bar a {
     text-decoration: none;
 }
-
 #first-content {
-    display:flex;
+    display: flex;
     flex-direction: row;
+    background-color: blue;
 }
 .top-and-bottom {
     background-color: lightblue;
     color: black;
     flex: 1;
-    margin: 10px;
+    margin: 0px;
 }
 .top-and-bottom h2 {
     font-size: large;
@@ -44,10 +46,29 @@ h1, h2, h3, h4 {
     margin: 10px;
 }
 #main-content {
-    flex: 2;
+    flex: 1;
+    border: blue solid 1px;
+}
+#links {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
 #side-bar {
-    flex: 1;
+    flex: 4;
+    border: blue solid 1px;
+}
+#ideas {
+    display: flex;
+    flex-direction: column;
+}
+.idea {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 4px;
+}
+.idea .top-and-bottom h2{
+    text-align: left;
 }
 
 #columns {
@@ -58,9 +79,15 @@ h1, h2, h3, h4 {
     flex: 1;
     color: black;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
-.cols h2 {
-    margin: 10px;
+.cols p {
+    margin-left: 6px;
+    margin-right: 6px;
 }
 .cols ul {
     display: flex;
@@ -72,39 +99,36 @@ h1, h2, h3, h4 {
     text-align: center;
 }
 .cols img {
-    margin: 10px;
-    object-fit: scale-down;
+    margin:auto;
 }
 #columns .cols {
-    border: blue solid 1px;
     background-color: lightgreen;
 }
-#columns .cols li {
-    background-color:royalblue;
-    color: white;
-    border: blue solid 1px;
-    padding: 13px;
-    margin: 8px;
-}
-#three-imgs .cols {
-    display:flex;
-    flex-direction: row;
-}
-footer {
-    background-color: rgb(70, 70, 70);
-    color: white;
-    
-}
-footer h2,h4 {
-    margin-block-end: 0;
-    margin-block-start: 0;
-}
-footer p {
-    color:black;
-    text-align: left;
-    float: right;
-}
+
 
 
 
 /* Typography */
+
+
+
+
+/* Mobile Size */
+@media (max-width: 965px) {
+    #nav-bar ul {
+        flex-direction: column;
+    }
+    #first-content {
+        flex-direction: column;
+        
+    }
+    .idea {
+        flex-direction: column;
+    }
+    .idea img {
+        margin: auto;
+    }
+    #columns {
+        flex-direction: column;
+    }
+}
