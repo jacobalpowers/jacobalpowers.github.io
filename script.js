@@ -5,7 +5,7 @@ class Assignment {
         this.image = image;
         this.description = description;
     }
-
+    
     get formatted() {
         const assignmentDiv = document.createElement("div");
         assignmentDiv.setAttribute("onclick", "location.href=\"" + this.link + "\"");
@@ -26,14 +26,45 @@ class Assignment {
 
         return assignmentDiv;
     }
-
-
 }
+class Project {
+    constructor(title, link, image, description) {
+        this.title = title;
+        this.link = link;
+        this.image = image;
+        this.description = description;
+    }
+
+    get formatted() {
+        const projectDiv = document.createElement("div");
+        projectDiv.setAttribute("onclick", "location.href=\"" + this.link + "\"");
+        projectDiv.classList.add("project-item");
+
+        const projectTitle = document.createElement("h3");
+        projectTitle.innerText = this.title;
+
+        const projectImage = document.createElement("img");
+        projectImage.setAttribute("src", "images/" + this.image);
+
+        const projectDescription = document.createElement("p");
+        projectDescription.innerText = this.description;
+
+        projectDiv.appendChild(projectTitle);
+        projectDiv.appendChild(projectImage);
+        projectDiv.appendChild(projectDescription);
+
+        return projectDiv;
+    }
+}
+
+
 
 
 window.onload = () => {
     let assignments = [];
     let assignmentList = document.getElementById("assignments");
+    let projects = [];
+    let projectList = document.getElementById("projects");
 
     assignments.push(new Assignment(
         "Assignment 1 - Basic HTML", 
@@ -87,9 +118,24 @@ window.onload = () => {
         "This assignment was designed to introduce students to the concept of classes within JS, and the implementation available to us with their use."));*/
 
 
+    projects.push(new Project(
+        "Project 1 - Topic Selection", 
+        "projects/part1/Semester Project Pt 1 - Topic Selection.pdf", 
+        "", 
+        ""));
+    projects.push(new Project(
+        "Project 2 - Topic Selection", 
+        "projects/part2/index.html", 
+        "", 
+        ""));
+
+
 
 
     for (let i in assignments) {
         assignmentList.append(assignments[i].formatted);
+    }
+    for (let i in projects) {
+        projectList.append(projects[i].formatted);
     }
 }
