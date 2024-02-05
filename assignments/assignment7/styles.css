@@ -1,98 +1,58 @@
 /** Structure **/
-body {
-    margin: 0px;
-}
 h1 {
     text-align: center;
-    color: #444A4C;
-    background-color: salmon;
-    margin: 0px;
+    background-color: tan;
 }
 
-#exercises {
+#three-flex {
     display: flex;
-    margin-inline: 0px;
+    background-color: #6495ED;
+    flex-direction: column;
 }
-.option {
-    flex: 1;
-    color: salmon;
-    background-color: white;
+#three-flex h2 {
     text-align: center;
-    border-bottom: 2px solid transparent;
 }
-.option h4 {
-    margin: 5px;
+.even-flexbox {
+    flex: 1;
+    background-color: #F0FFFF;
+    margin: 10px;
 }
-
-#whos_the_oldest {
-    background-color: salmon;
-    margin: auto;
-    padding: 10px;
-    width: 60%;
-    display: table;
-}
-#whos_the_oldest h2 {
-    display: table-row;
-    white-space: nowrap;
-}
-.align-input {
-    display: table-row;
-}
-.align-input label {
-    padding-left: 10px;
-    display: table-cell;
-}
-.align-input input {
-    display: table-cell;
-}
-
-#thermometer {
-    background-color: salmon;
-    margin: auto;
-    padding: 10px;
-    width: 60%;
+#green {
     display: none;
 }
-#thermometer h2 {
-    margin: 4px;
+#cyan {
+    display: block;
 }
-
+#change img{
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 /** Navigation **/
-
-
-/** Gradients **/
-#gradient_bar {
-    --complete: 0%;
-    width: 100px;
-    height: 500px;
-    background-image: linear-gradient(0deg, red var(--complete), white var(--complete));
-    align-content: center;
-    margin: auto;
+#slider #emoji {
+    text-align: center;
 }
+#spinner {
+    width: 95%;
+}
+
 
 /** Typography **/
 
-.hidden {
-    display: none !important;
-}
 
-
-@media (max-width: 899px) {
-    #exercises {
-        flex-direction: column;
+@media (min-width: 641px) {
+    #three-flex {
+        flex-direction: row;
     }
-    .option {
-        margin-bottom: 4px;
-        background-color: lightgray;
+    #green {
+        display: none;
     }
-
-    /** Hamburger Menu **/
-    #hamburger_menu div {
-        width: 35px;
-        height: 5px;
-        background-color: gray;
-        margin: 6px;
+    #cyan {
+        display: block;
+    }
+    #change img{
+        margin-left: auto;
+        margin-right: auto;
     }
 }

@@ -74,15 +74,15 @@ h2, h3, p {
 }
 
 #navigation-bar ul {
-    padding-left: 0;
-    display: none;
+    padding:0;
 }
 
-#navigation-bar li {
+#navigation-bar h1 {
     list-style-type: none;
     background-color: #73000A;
-    font-family: "Berlingske Sans Extracondensed", "Impact", sans-serif;
-    font-size: 1.25rem;
+    color: white;
+    font-family: 'Berlingske Serif', 'Georgia', serif;
+    font-size: 1.6em;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     padding: 14.5px;
@@ -91,93 +91,6 @@ h2, h3, p {
     align-items: center;
 }
 
-#navigation-bar a {
-    text-decoration: none;
-}
-
-
-
-
-
-#researcher {
-    width: 100%;
-    max-height: 600;
-    object-fit: cover;
-}
-
-#research-title {
-    font-weight: 200;
-    text-transform: uppercase;
-    font-size: 76px;
-    letter-spacing: 1.6px;
-    background-color: #73000A;
-    color: white;
-    margin-top: -5%;
-    margin-left: 4%;
-    margin-right: 8%;
-    position: relative;
-}
-
-#main-content h3, p {
-    margin: 7%;
-    line-height: 200%;
-}
-
-#main-content h3 {
-    line-height: 300%;
-}
-
-.image-text-card {
-    display:flex;
-    flex-direction: row;
-    max-height: 70%;
-}
-
-.image-text-card img {
-    height: auto;
-    width: 60%
-}
-
-.image-text-card button {
-    border: none;
-    background-color: #73000A;
-    color: white;
-    padding: 15px;
-    font-size: larger;
-    text-transform: uppercase;
-    white-space: nowrap;
-}
-
-.text-card {
-    border: 6%;
-    color: white;
-    flex: 1;
-    padding: 4%;
-    padding-bottom: 8%;
-}
-
-#remarkable-text {
-    background-color: #73000A;
-}
-#remarkable-text h2 {
-    font-size: 50px;
-}
-#built-text {
-    background-color: black;
-}
-#built-text h3 {
-    font-size: 50px;
-}
-
-/* Typography */
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#mainheader h1 {
-    text-align: center;
-}
 
 /* Desktop Size */
 @media (min-width: 966px) {
@@ -208,13 +121,4 @@ body {
         right: 0;
         top: 30px;
     }
-
-    #navigation-bar ul{
-        display: flex;
-        flex-direction: row;
-    }
-
-    #navigation-bar li {
-        flex: 8;
-    } 
 }
