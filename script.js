@@ -126,13 +126,18 @@ window.onload = () => {
     projects.push(new Project(
         "Project 1 - Topic Selection", 
         "projects/part1/Semester Project Pt 1 - Topic Selection.pdf", 
-        "", 
-        ""));
+        "project1.png", 
+        "This is the initial write-up for my semester project topic."));
     projects.push(new Project(
         "Project 2 - Topic Selection", 
         "projects/part2/index.html", 
-        "", 
-        ""));
+        "project2.png", 
+        "This is the basic wireframe of the \"Shop 4 Cards\" project."));
+    /*projects.push(new Project(
+        "Project 3 - HTML and CSS", 
+        "projects/part3/home.html", 
+        "project3.png", 
+        "This is the HTML and CSS foundations for the \"Shop 4 Cards\" project."));*/
 
 
 
