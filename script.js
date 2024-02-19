@@ -83,7 +83,7 @@ window.onload = () => {
         "This assignment was designed to teach students about flexboxes and the complex dynamic displays that can be created with them."));
     assignments.push(new Assignment(
         "Assignment 4 - Main Page CSS", 
-        "assignments/assignment4/index.html", 
+        "#", 
         "assignment4.png", 
         "This assignment was to redesign the page you see currently. This was in an attempt to allow users to have a \"landing page\" to view all assignments from."));
     /*assignments.push(new Assignment(
@@ -101,12 +101,12 @@ window.onload = () => {
         "assignments/assignment7/index.html", 
         "assignment7.png", 
         "This assignmnet was our introduction to JavaScript in context of HTML. This was a simple assignment to give a fundimental understanding on how to implement scripts into our webpages."));
-    /*assignments.push(new Assignment(
-        "Assignment 7 - Conditionals", 
-        "assignments/assignment7/index.html", 
-        "assignment7.png", 
-        "This assignmnet was to farther our understanding of JS and to allow manipulation of conditional statements within the web page itself."));
     assignments.push(new Assignment(
+        "Assignment 8 - If Statements", 
+        "assignments/assignment8/index.html", 
+        "assignment8.png", 
+        "This assignmnet was to introduce If Statements and how to implement them with JS."));
+    /*assignments.push(new Assignment(
         "Assignment 8 - Loops", 
         "assignments/assignment8/index.html", 
         "assignment8.png", 

@@ -5,44 +5,50 @@ const exercise_1_click = () => {
     const exercise2 = document.getElementById("exercise_2");
     exercise1.style.borderBottomColor = "salmon";
     exercise2.style.borderBottomColor = "transparent";
-    document.getElementById("whos_the_oldest").style.display = "table";
-    document.getElementById("thermometer").style.display = "none";
+    document.getElementById("enter_command").style.display = "flex";
+    document.getElementById("yoga").style.display = "none";
 }
 const exercise_2_click = () => {
     const exercise1 = document.getElementById("exercise_1");
     const exercise2 = document.getElementById("exercise_2");
     exercise1.style.borderBottomColor = "transparent";
     exercise2.style.borderBottomColor = "salmon";
-    document.getElementById("whos_the_oldest").style.display = "none";
-    document.getElementById("thermometer").style.display = "block";
+    document.getElementById("enter_command").style.display = "none";
+    document.getElementById("yoga").style.display = "flex";
 }
 const toggle_nav = () => {
     document.getElementById("exercises").classList.toggle("hidden");
 }
-const validate_info = () => {
-    const name1 = document.getElementById("name_1").value;
-    const name2 = document.getElementById("name_2").value;
-    const name3 = document.getElementById("name_3").value;
-    const age1 = document.getElementById("age_1").value;
-    const age2 = document.getElementById("age_2").value;
-    const age3 = document.getElementById("age_3").value;
+const changeCommand = () => {
+    const command = document.getElementById("command").value;
+    const action = document.getElementById("action");
 
-    if (is_blank(name1) || 
-        is_blank(name2) || 
-        is_blank(name3) ||
-        is_blank(age1) ||
-        is_blank(age2) ||
-        is_blank(age3)
-        ) {
-            console.debug("Element is blank");
-            return false;
-        }
-    if (is_not_number(age1) ||
-        is_not_number(age2) ||
-        is_not_number(age3)) {
-            console.debug("Age is not number");
-            return false;
-        }
+    if (is_blank(command)) {
+        action.src="images/original.jpg"
+    }
+    const currentAction = command.charAt(command.length - 1);
+    if (is_not_valid(currentAction)) {
+        return false;
+    }
+    if (currentAction == 'b') {
+        action.src="images/read.jpg";
+    }
+    if (currentAction == 'c') {
+        action.src="images/clown.jpg";
+    }
+    if (currentAction == 'p') {
+        action.src="images/birthday.jpg";
+    }
+    if (currentAction == 'r') {
+        action.src="images/rain.jpg";
+    }
+    if (currentAction == 's') {
+        action.src="images/shovel.jpg";
+    }
+    if (currentAction == 'w') {
+        action.src="images/work.jpg";
+    }
+
     return true;
 }
 const is_blank = (data) => {
@@ -51,72 +57,54 @@ const is_blank = (data) => {
     }
     return false;
 }
-const is_not_number = (data) => {
-    if (isNaN(data.trim())) {
-        return true;
-    }
-    return false;
-}
-const compare_age = () => {
-    const name1 = document.getElementById("name_1").value;
-    const name2 = document.getElementById("name_2").value;
-    const name3 = document.getElementById("name_3").value;
-    const age1 = document.getElementById("age_1").value;
-    const age2 = document.getElementById("age_2").value;
-    const age3 = document.getElementById("age_3").value;
-
-    if (!validate_info()) {
-        document.getElementById("o_y_output").innerHTML = "Oldest to youngest: Invalid Information";
+const is_not_valid = (data) => {
+    if (data == 'b' ||
+        data == 'c' ||
+        data == 'p' ||
+        data == 'r' ||
+        data == 's' ||
+        data == 'w') {
         return false;
     }
-
-    if (age1 > age2 && age1 > age3) {
-        if (age2 > age3) {
-            document.getElementById("o_y_output").innerHTML = "Oldest to youngest: " + name1 + ", " + name2 + ", " + name3;
-        } else {
-            document.getElementById("o_y_output").innerHTML = "Oldest to youngest: " + name1 + ", " + name3 + ", " + name2;
-        }
-    } else if (age2 > age1 && age2 > age3) {
-        if (age1 > age3) {
-            document.getElementById("o_y_output").innerHTML = "Oldest to youngest: " + name2 + ", " + name1 + ", " + name3;
-        } else {
-            document.getElementById("o_y_output").innerHTML = "Oldest to youngest: " + name2 + ", " + name3 + ", " + name1;
-        }
-    } else {
-        if (age1 > age2) {
-            document.getElementById("o_y_output").innerHTML = "Oldest to youngest: " + name3 + ", " + name1 + ", " + name2;
-        } else {
-            document.getElementById("o_y_output").innerHTML = "Oldest to youngest: " + name3 + ", " + name2 + ", " + name1;
-        }
-    }
+    return true;
 }
-const display = () => {
-    const bar = document.getElementById("gradient_bar");
-    const funds = document.getElementById("funds_raised").value;
+const yoga = () => {
+    const slider = document.getElementById("slide").value;
+    const yoga = document.getElementById("yoga_img");
 
-    if (is_not_number(funds)) {
-        console.debug("Funds not number");
-        return false;
+    if (slider == 1) {
+        yoga.src="images/yoga1.jpg"
+    }
+    if (slider == 2) {
+        yoga.src="images/yoga2.jpg"
+    }
+    if (slider == 3) {
+        yoga.src="images/yoga3.jpg"
+    }
+    if (slider == 4) {
+        yoga.src="images/yoga4.jpg"
+    }
+    if (slider == 5) {
+        yoga.src="images/yoga5.jpg"
+    }
+    if (slider == 6) {
+        yoga.src="images/yoga6.jpg"
+    }
+    if (slider == 7) {
+        yoga.src="images/yoga7.jpg"
+    }
+    if (slider == 8) {
+        yoga.src="images/yoga8.jpg"
     }
 
-    if (funds >= goal) {
-        bar.style.setProperty("--complete", 100 + "%");
-    } else if (funds >= goal * 0.75) {
-        bar.style.setProperty("--complete", 75 + "%");
-    } else if (funds >= goal * 0.5) {
-        bar.style.setProperty("--complete", 50 + "%");
-    } else if (funds >= goal * 0.25) {
-        bar.style.setProperty("--complete", 25 + "%");
-    } else {
-        bar.style.setProperty("--complete", 0 + "%");
-    }
+    return true;
 }
 
 
 window.onload = () => {
     document.getElementById("exercise_1").onclick = exercise_1_click;
     document.getElementById("exercise_2").onclick = exercise_2_click;
+    document.getElementById("command").oninput = changeCommand;
     document.getElementById("hamburger_menu").onclick = toggle_nav;
-    document.getElementById("compare_ages").onclick = compare_age;
-    document.getElementById("display_funds").onclick = display;
+    document.getElementById("slide").oninput = yoga;
 }

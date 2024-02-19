@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Conditionals</title>
+        <title>If Statements</title>
         <link rel="stylesheet" href="styles.css">
         <script src="script.js"></script>
     </head>
@@ -23,50 +23,26 @@
             </nav>
         </header>
 
-        <div id="whos_the_oldest">
-            <h2>Who's The Oldest</h2>
-            <div class="align-input">
-                <label for="name_1">Name 1:</label>
-                <input type="text" id="name_1">
-            </div>
-            <div class="align-input">
-                <label for="age_1">Age 1:</label>
-                <input type="text" id="age_1">
-            </div>
-            <div class="align-input">
-                <label for="name_2">Name 2:</label>
-                <input type="text" id="name_2">
-            </div>
-            <div class="align-input">
-                <label for="age_2">Age 2:</label>
-                <input type="text" id="age_2">
-            </div>
-            <div class="align-input">
-                <label for="name_3">Name 3:</label>
-                <input type="text" id="name_3">
-            </div>
-            <div class="align-input">
-                <label for="age_3">Age 3:</label>
-                <input type="text" id="age_3">
-            </div>
-            <div class="align-input">
-                <button id="compare_ages">Compare Ages</button>
-            </div>
-            <div class="align-input">
-                <p id="o_y_output">Oldest to youngest: Invalid Information</p>
-            </div>
+        <div id="enter_command">
+            <h2>Enter Command</h2>
+            <ul>
+                <li>b: Read a book</li>
+                <li>c: Act like a clown</li>
+                <li>p: Have a birthday party</li>
+                <li>r: Walk in the rain</li>
+                <li>s: Shovel up some dirt</li>
+                <li>w: Go to work</li>
+            </ul>
+            <input type="text" id="command">
+            <br>
+            <img id="action" src="images/original.jpg">
+            <p>Image by <a href="https://www.freepik.com/free-vector/hand-drawn-stickman-collection_20856908.htm#query=stick%20figure&position=1&from_view=keyword&track=ais&uuid=12d17ea3-cffc-4386-9be4-ff9dc4b5edc2">Freepik</a>
+            </p>
         </div>
-        <div id="thermometer">
-            <h2>Fund Raising</h2>
-            <h3>Goal: 10,000.00</h3>
-            <div id="funds">
-                <label for="funds_raised">Funds Raised:</label>
-                <input type="number" id="funds_raised">
-                <button id="display_funds">Display</button>
-            </div>
-            <div id="gradient_bar">
-                <h6></h6>
-            </div>
+        <div id="yoga">
+            <h2>Yoga Slide</h2>
+            <img id="yoga_img" src="images/yoga1.jpg">
+            <input type="range" min="1" max="8" value="0" id="slide">
         </div>
 
     </body>

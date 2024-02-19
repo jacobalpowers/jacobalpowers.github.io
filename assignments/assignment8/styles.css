@@ -12,6 +12,7 @@ h1 {
 #exercises {
     display: flex;
     margin-inline: 0px;
+    cursor:pointer;
 }
 .option {
     flex: 1;
@@ -24,37 +25,49 @@ h1 {
     margin: 5px;
 }
 
-#whos_the_oldest {
+#enter_command {
     background-color: salmon;
     margin: auto;
     padding: 10px;
     width: 60%;
-    display: table;
+    display: flex;
+    flex-direction: column;
 }
-#whos_the_oldest h2 {
-    display: table-row;
+#enter_command h2 {
     white-space: nowrap;
+    text-align: center;
 }
-.align-input {
-    display: table-row;
+#enter_command #command {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 20px;
 }
-.align-input label {
-    padding-left: 10px;
-    display: table-cell;
-}
-.align-input input {
-    display: table-cell;
+#enter_command img {
+    max-height: 40%;
+    margin-left: 35%;
+    margin-right: 35%;
 }
 
-#thermometer {
+
+#yoga {
     background-color: salmon;
     margin: auto;
     padding: 10px;
     width: 60%;
     display: none;
+    flex-direction: column;
 }
-#thermometer h2 {
+#yoga h2 {
     margin: 4px;
+}
+#yoga img {
+    max-height: 300px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#slide {
+
 }
 
 
