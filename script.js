@@ -106,12 +106,12 @@ window.onload = () => {
         "assignments/assignment8/index.html", 
         "assignment8.png", 
         "This assignmnet was to introduce If Statements and how to implement them with JS."));
-    /*assignments.push(new Assignment(
-        "Assignment 8 - Loops", 
-        "assignments/assignment8/index.html", 
-        "assignment8.png", 
-        "This assignmnet was an expansion on the previous assignment, and was done to farther expand our understanding on how animations and JS can be used in a webpage."));
     assignments.push(new Assignment(
+        "Assignment 9 - Loops", 
+        "assignments/assignment9/index.html", 
+        "assignment9.png", 
+        "This assignmnet was to take concepts found in the previous assignment and build upon them farther with for loops and Intervals."));
+    /*assignments.push(new Assignment(
         "Assignment 9 - Arrays", 
         "assignments/assignment9/index.html", 
         "#", 

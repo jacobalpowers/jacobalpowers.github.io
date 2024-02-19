@@ -1,37 +1,95 @@
 /** Structure **/
 body {
-    background-color: #333333;
+    margin: 0px;
 }
-
-#part-container {
-    display: flex;
-}
-.part-item {
-    flex: 1;
-}
-#running-man {
-    background-color: #3399FF;
-    align-items: center;
-    justify-content: center;
-}
-#running-man h2 {
+h1 {
     text-align: center;
-    padding-top: 10px;
-}
-#running-man img {
-    --position: 0%;
-    margin-left: var(--position);
-    width: 100px;
+    color: #444A4C;
+    background-color: salmon;
+    margin: 0px;
 }
 
-#thermometer {
-    background-color: #3399FF;
+#exercises {
+    display: flex;
+    margin-inline: 0px;
+    cursor:pointer;
+}
+.option {
+    flex: 1;
+    color: salmon;
+    background-color: white;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+}
+.option h4 {
+    margin: 5px;
+}
+
+#ball {
+    background-color: salmon;
     margin: auto;
     padding: 10px;
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
-#thermometer h2 {
-    margin: 4px;
+#start {
+    margin-bottom: 5px;
+    cursor: pointer;
+    width: 40px;
+ 
+}
+#bounce_bar {
+    width: 100px;
+    height: 400px;
+    align-content: center;
+    margin: auto;
+    background-color: white;
+}
+#bounce_bar img{
+    --position: 0%;
+    margin-top: var(--position);
+    padding: 0px;
+    max-width: 50px;
+    max-height: 50px;
+    
+}
+#ball p {
+    align-items: left;
+}
+
+
+
+
+#yoga {
+    background-color: salmon;
+    margin: auto;
+    padding: 10px;
+    width: 60%;
+    display: none;
+    flex-direction: column;
+}
+#yoga_title {
+    text-align: center;
+}
+#yoga_stuff {
+    display: flex;
+    flex-direction: row;
+}
+#yoga_section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+#yoga_text_section {
+    flex: 1;
+}
+#yoga img {
+    max-width: 60%;
+    max-height: 60%;
+    padding: 2px;
 }
 
 
@@ -53,3 +111,25 @@ body {
 /** Typography **/
 
 
+.hidden {
+    display: none !important;
+}
+
+
+@media (max-width: 899px) {
+    #exercises {
+        flex-direction: column;
+    }
+    .option {
+        margin-bottom: 4px;
+        background-color: lightgray;
+    }
+
+    /** Hamburger Menu **/
+    #hamburger_menu div {
+        width: 35px;
+        height: 5px;
+        background-color: gray;
+        margin: 6px;
+    }
+}

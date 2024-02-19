@@ -1,76 +1,104 @@
-var goal = 10000;
-var running = false;
-var walk = true;
 var position = 0;
-var currFill = 0;
-var filling = false;
-var maxFill = 0;
+var maxPosition = 350;
+var speed = 10;
+var interval = 10;
+var bouncing = false;
+var down = true;
 
-const toggleRun = () => {
-    if (!running) {
-        running = setInterval(runningMan, 200);
+const exercise_1_click = () => {
+    const exercise1 = document.getElementById("exercise_1");
+    const exercise2 = document.getElementById("exercise_2");
+    exercise1.style.borderBottomColor = "salmon";
+    exercise2.style.borderBottomColor = "transparent";
+    document.getElementById("ball").style.display = "flex";
+    document.getElementById("yoga").style.display = "none";
+}
+const exercise_2_click = () => {
+    const exercise1 = document.getElementById("exercise_1");
+    const exercise2 = document.getElementById("exercise_2");
+    exercise1.style.borderBottomColor = "transparent";
+    exercise2.style.borderBottomColor = "salmon";
+    document.getElementById("ball").style.display = "none";
+    document.getElementById("yoga").style.display = "flex";
+}
+
+const toggle_bouncing = () => {
+    var start = document.getElementById("start");
+    if (!bouncing) {
+        bouncing = setInterval(bounce_ball, interval);
+        start.textContent = "stop";
     } else {
-        clearInterval(running);
-        running = false;
+        clearInterval(bouncing);
+        bouncing = false;
+        start.textContent = "start";
     }
 }
 
-const runningMan = () => {
-    const man = document.getElementById("man-img");
-    if (position >= 70) {
-        man.src = "img/walkingman.png";
-        clearInterval(running);
-        running = false;
-        return;
-    }
-    if (walk) {
-        man.src = "img/runningman.png";
-        walk = false;
-    } else {
-        man.src = "img/walkingman.png";
-        walk = true;
-    }
-    position += 2.5;
-    man.style.setProperty("--position", position + "%");
+const bounce_ball = () => {
+    const ball = document.getElementById("ball_img");
     
+    if (down) {
+        position += speed;
+        if (position >= maxPosition) {
+            down = false;
+        }
+    }
+    if (!down) {
+        position -= speed;
+        if (position <= 0) {
+            down = true;
+        }
+    }
+    
+    ball.style.setProperty("--position", position + "%");
 }
 
-const is_not_number = (data) => {
-    if (isNaN(data.trim())) {
-        return true;
+const yoga_input = (input) => {
+    var text = document.getElementById("yoga_text");
+    const newPosition = document.createElement("h4");
+    if (input == "yoga1") {
+        newPosition.textContent = "Side Stretch";
     }
-    return false;
+    if (input == "yoga2") {
+        newPosition.textContent = "Downward Dog";
+    }
+    if (input == "yoga3") {
+        newPosition.textContent = "Upward Flamingo";
+    }
+    if (input == "yoga4") {
+        newPosition.textContent = "Reach Over Leg";
+    }
+    if (input == "yoga5") {
+        newPosition.textContent = "Twist";
+    }
+    if (input == "yoga6") {
+        newPosition.textContent = "Lunge";
+    }
+    if (input == "yoga7") {
+        newPosition.textContent = "Heel Stretch";
+    }
+    if (input == "yoga8") {
+        newPosition.textContent = "Wall Lean";
+    }
+    text.append(newPosition);
 }
 
-const fillThermo = () => {
-    const bar = document.getElementById("gradient_bar");
-    currFill += 1;
-    bar.style.setProperty("--complete", currFill + "%");
-    if (currFill >= maxFill) {
-        clearInterval(filling);
-        filling = false;
-    }
+
+
+const toggle_nav = () => {
+    document.getElementById("exercises").classList.toggle("hidden");
 }
 
-const displayThermo = () => {
-    const bar = document.getElementById("gradient_bar");
-    const funds = document.getElementById("funds_raised").value;
-    currFill = 0;
-    maxFill = 0;
-    if (is_not_number(funds)) {
-        console.debug("Funds not number");
-        return false;
-    }
-
-    maxFill = (funds/goal) * 100;
-    if (maxFill > 100) {
-        maxFill = 100;
-    }
-    filling = setInterval(fillThermo, 10);
-}
 
 window.onload = () => {
-    document.getElementById("man-img").onclick = toggleRun;
-    document.getElementById("display_funds").onclick = displayThermo;
+    var images = document.querySelectorAll(".yoga_img");
+
+    document.getElementById("exercise_1").onclick = exercise_1_click;
+    document.getElementById("exercise_2").onclick = exercise_2_click;
+    document.getElementById("hamburger_menu").onclick = toggle_nav;
+    document.getElementById("start").onclick = toggle_bouncing;
+    for (var i = 0; i < images.length; i++) {
+        images[i].onclick = function(){yoga_input(this.id)};
+    }
 }
 
