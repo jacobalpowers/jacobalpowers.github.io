@@ -114,7 +114,7 @@ window.onload = () => {
     assignments.push(new Assignment(
         "Assignment 10 - Arrays", 
         "assignments/assignment10/index.html", 
-        "assignments10.png", 
+        "assignment10.png", 
         "This assignment is designed to show the use of arrays and interval functions"));
     /*assignments.push(new Assignment(
         "Assignment 10 - Classes", 
