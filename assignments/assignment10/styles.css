@@ -1,0 +1,40 @@
+/* Structure */
+body {
+    margin: 0px;
+}
+header {
+    text-align: center;
+    color: #444A4C;
+    background-color: salmon;
+    margin: 0px;
+}
+main {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+#text {
+    border: 1px solid lightblue;
+    background-color: papayawhip;
+    color: #444A4C;
+}
+#pictures {
+    border: 1px solid lightblue;
+    background-color: papayawhip;
+    padding-top: 1%;
+    color: #444A4C;
+}
+.image {
+    border: 2px solid lightblue;
+}
+
+
+/*Navigation */
+
+
+
+
+/* Typography */
+
+
