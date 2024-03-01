@@ -116,11 +116,11 @@ window.onload = () => {
         "assignments/assignment10/index.html", 
         "assignment10.png", 
         "This assignment is designed to show the use of arrays and interval functions"));
-    /*assignments.push(new Assignment(
-        "Assignment 10 - Classes", 
-        "assignments/assignment10/index.html", 
-        "assignment10.png", 
-        "This assignment was designed to introduce students to the concept of classes within JS, and the implementation available to us with their use."));*/
+    assignments.push(new Assignment(
+        "Assignment 11 - Classes", 
+        "assignments/assignment11/index.html", 
+        "assignment11.png", 
+        "This assignment was designed to introduce students to the concept of classes within JS, and the implementation available to us with their use."));
 
 
     projects.push(new Project(

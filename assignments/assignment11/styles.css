@@ -1,6 +1,12 @@
 /** Structure **/
+header {
+    text-align: center;
+    color: #444A4C;
+    background-color: salmon;
+    margin: 0px;
+}
 body {
-    background-color: rgb(85, 85, 85);
+    
 }
 #items {
     background-color: cadetblue;
@@ -11,35 +17,97 @@ h1 {
 p {
     margin-inline: 5px;
 }
-#toy-list {
+#composer-list {
+    color: #444A4C;
+
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
-.toy-item {
-    background-color: white;
-    flex: 3 0 30%;
+.composer-item {
+    background-color: papayawhip;
+
     display: flex;
-    margin: 5px;
-    padding: 2px;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+    width: 150px;
+    height: 200px;
+
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
 }
-.toy-item img {
-    width: 300px;
-    height: 300px;
+.composer-item img {
+    width: 80%;
+    height: 75%;
     position: relative;
     flex: 1;
 }
-.description {
-    position: absolute;
-    margin: auto;
+
+.w3-modal {
     display: none;
+    z-index: 3;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
 }
-.flex {
+.w3-modal-content {
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 70%;
+}
+.w3-container {
+    padding: 0.01em 16px;
+}
+.w3-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.w3-display-topright {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#more-details {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
+#more-details h2{
+    margin-top: 10px;
+    font-weight: bold;
+}
+#picture {
+    margin-top: 40px;
+}
+#more-details img {
+    height: 300px;
+    width: auto;
+    padding-left: 10px;
+}
+
+
 
 
 
@@ -56,11 +124,6 @@ p {
 }
 
 /** Hover **/
-.toy-item:hover {
-    .description {
-        display:inline;
-    }
-    img {
-        opacity: 20%;
-    }
+.composer-item:hover {
+    opacity: 80%;
 }
