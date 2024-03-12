@@ -1,0 +1,57 @@
+/* Structure */
+header {
+    text-align: center;
+    color: #444A4C;
+    background-color: salmon;
+    /*margin: 0px;*/
+}
+
+.house_item {
+    background-color: papayawhip;
+    display: block;
+    text-align: center;
+    color: #444A4C;
+    padding-top: 1%;
+    margin-top: 1%;
+}
+
+#description {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#description img {
+    width: 40%;
+    height: auto;
+}
+#description_details {
+    background-color: darkcyan;
+    text-align: left;
+    width: 100%;
+    padding-left: 1%;
+}
+
+#floorplan_list {
+    display: flex;
+    flex-direction: row;
+
+}
+.floorplan {
+    flex: 1;
+    padding-bottom: 1%;
+}
+.floorplan img {
+    width: 60%;
+    height: auto;
+}
+
+
+
+/** Navigation **/
+
+
+/** Typography **/
+
+

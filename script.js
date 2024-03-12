@@ -121,6 +121,11 @@ window.onload = () => {
         "assignments/assignment11/index.html", 
         "assignment11.png", 
         "This assignment was designed to introduce students to the concept of classes within JS, and the implementation available to us with their use."));
+    assignments.push(new Assignment(
+        "Assignment 12 - Parsing JSON", 
+        "assignments/assignment12/index.html", 
+        "assignment12.png", 
+        "This assignment functions as a way to introduce students to interacting with JSON documents as well as to help students learn to interact with elements outside of their local environment."));
 
 
     projects.push(new Project(
