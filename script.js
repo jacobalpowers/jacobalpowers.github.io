@@ -135,10 +135,10 @@ window.onload = () => {
         "This assignment functions as a way to introduce students to interacting with JSON documents as well as to help students learn to interact with elements outside of their local environment."));
     assignments.push(new Assignment(
         "Assignment 13 - Node Hello World", 
-        "https://helloworld-demo-o7sx.onrender.com", 
+        "", 
         "assignment13.png", 
-        "This assignment is an introduction to using Node.JS and Render to communicate with an outside server.\n\nClick the image to see the Render hosted Hello World, click Github below to view the app.js.",
-        "<a href=\"https://github.com/jacobalpowers/node-helloworld/blob/main/app.js\">Github</a>"));
+        "This assignment is an introduction to using Node.JS and Render to communicate with an outside server",
+        "<a href=\"https://github.com/jacobalpowers/node-helloworld/blob/main/app.js\">Github</a><br><a href=\"https://helloworld-demo-o7sx.onrender.com\">Render Live</a>"));
 
 
     projects.push(new Project(
