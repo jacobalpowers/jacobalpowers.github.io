@@ -1,9 +1,10 @@
 class Assignment {
-    constructor(title, link, image, description) {
+    constructor(title, link, image, description, secondAddress = "") {
         this.title = title;
         this.link = link;
         this.image = image;
         this.description = description;
+        this.secondAddress = secondAddress;
     }
     
     get formatted() {
@@ -20,10 +21,16 @@ class Assignment {
         const assignmentDescription = document.createElement("p");
         assignmentDescription.innerText = this.description;
 
+        
+
         assignmentDiv.appendChild(assignmentTitle);
         assignmentDiv.appendChild(assignmentImage);
         assignmentDiv.appendChild(assignmentDescription);
-
+        if (this.html != "") {
+            const assignmentSecondAddress = document.createElement("p");
+            assignmentSecondAddress.innerHTML = this.secondAddress;
+            assignmentDiv.appendChild(assignmentSecondAddress);
+        }
         return assignmentDiv;
     }
 }
@@ -47,7 +54,7 @@ class Project {
         projectImage.setAttribute("src", "images/" + this.image);
 
         const projectDescription = document.createElement("p");
-        projectDescription.innerText = this.description;
+        projectDescription.innerHTML = this.description;
 
         projectDiv.appendChild(projectTitle);
         projectDiv.appendChild(projectImage);
@@ -126,6 +133,12 @@ window.onload = () => {
         "assignments/assignment12/index.html", 
         "assignment12.png", 
         "This assignment functions as a way to introduce students to interacting with JSON documents as well as to help students learn to interact with elements outside of their local environment."));
+    assignments.push(new Assignment(
+        "Assignment 13 - Node Hello World", 
+        "https://helloworld-demo-o7sx.onrender.com", 
+        "assignment13.png", 
+        "This assignment is an introduction to using Node.JS and Render to communicate with an outside server.\n\nClick the image to see the Render hosted Hello World, click Github below to view the app.js.",
+        "<a href=\"https://github.com/jacobalpowers/node-helloworld/blob/main/app.js\">Github</a>"));
 
 
     projects.push(new Project(
