@@ -3,24 +3,135 @@
 <html lang="en">
     <head>
         <title>Jake Powers: Project 3</title>
-        <link rel="stylesheet" href="homestyles.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     
     <body>
-        <div id="navbar">
-            <img id="logo" src="images/logo.gif">
-            <a href="#">Shop 4 Cards</a>
-            <form>
+        <section id="navbar">
+            <div id="logo_name">
+                <a href="#"><img id="logo" src="images/logo.gif"></a>
+                <a id="site_name" href="#">Shop 4 Cards</a>
+            </div>
+            <div id="form">
                 <select name="game" id="games">
+                    <option selected value="all" >All</option>
                     <option value="pokemon">Pokemon</option>
                     <option value="mtg">Magic the Gathering</option>
                     <option value="yugioh">Yugioh</option>
                     <option value="onepiece">One Piece</option>
                 </select>
                 <input type="text" placeholder="Search for Cards">
-            </form>
-            <img id="account" src="images/account.png">
-        </div>
+                <img id="search_img" src="images/search icon.png">
+            </div>
+            <div id="account_div">
+                <a href="account/index.html"><img id="account" src="images/account.png"></a>
+            </div>
+        </section>
+
+        <section id="main_page">
+            <div id="recent_purchases">
+                <h2><b>Recent Purchases</b></h2>
+                <div class="card_display">
+                    <img src="images/dotd1.gif">
+                    <div id="card_text">
+                        <p>Card Name</p>
+                        <p>Price: $29.30</p>
+                    </div>
+                </div>
+                <div class="card_display">
+                    <img src="images/dotd2.gif">
+                    <div id="card_text">
+                        <p>Card Name</p>
+                        <p>Price: $2.93</p>
+                    </div>
+                </div>
+                <div class="card_display">
+                    <img src="images/dotd3.gif">
+                    <div id="card_text">
+                        <p>Card Name</p>
+                        <p>Price: $9.30</p>
+                    </div>
+                </div>
+                <div class="card_display">
+                    <img src="images/dotd2.gif">
+                    <div id="card_text">
+                        <p>Card Name</p>
+                        <p>Price: $13.12</p>
+                    </div>
+                </div>
+                <div class="card_display">
+                    <img src="images/dotd3.gif">
+                    <div id="card_text">
+                        <p>Card Name</p>
+                        <p>Price: $0.95</p>
+                    </div>
+                </div>
+            </div>
+            <div id="center_page">
+                <div id="new_product">
+                    <h2>New Product Releases</h2>
+                    <img src="images/New_Release_1.gif">
+                </div>
+                <div id="deal_of_the_day">
+                    <div class="dotd">
+                        <p>Card Name</p>
+                        <p>Deal of the Day</p>
+                        <p>10% Off</p>
+                        <img src="images/dotd1.gif">
+                    </div>
+                    <div class="dotd">
+                        <p>Card Name</p>
+                        <p>Deal of the Day</p>
+                        <p>20% Off</p>
+                        <img src="images/dotd2.gif">
+                    </div>
+                    <div class="dotd">
+                        <p>Card Name</p>
+                        <p>Deal of the Day</p>
+                        <p>30% Off</p>
+                        <img src="images/dotd3.gif">
+                    </div>
+                </div>
+            </div>
+            <div id="recent_sales">
+                <h2><b>Recent Sales</b></h2>
+                <div class="card_display">
+                    <img src="images/dotd1.gif">
+                    <div id="card_text">
+                        <p>Card Name</p>
+                        <p>Price: $29.30</p>
+                    </div>
+                </div>
+                <div class="card_display">
+                    <img src="images/dotd2.gif">
+                    <div id="card_text">
+                        <p>Card Name</p>
+                        <p>Price: $2.93</p>
+                    </div>
+                </div>
+                <div class="card_display">
+                    <img src="images/dotd3.gif">
+                    <div id="card_text">
+                        <p>Card Name</p>
+                        <p>Price: $9.30</p>
+                    </div>
+                </div>
+                <div class="card_display">
+                    <img src="images/dotd2.gif">
+                    <div id="card_text">
+                        <p>Card Name</p>
+                        <p>Price: $13.12</p>
+                    </div>
+                </div>
+                <div class="card_display">
+                    <img src="images/dotd3.gif">
+                    <div id="card_text">
+                        <p>Card Name</p>
+                        <p>Price: $0.95</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     </body>
