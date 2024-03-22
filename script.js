@@ -139,6 +139,12 @@ window.onload = () => {
         "assignment13.png", 
         "This assignment is an introduction to using Node.JS and Render to communicate with an outside server",
         "<a href=\"https://github.com/jacobalpowers/node-helloworld/blob/main/app.js\">Github</a><br><a href=\"https://helloworld-demo-o7sx.onrender.com\">Render Live</a>"));
+    assignments.push(new Assignment(
+        "Assignment 14 - Reading Server Side JSON", 
+        "", 
+        "assignment14.png", 
+        "This assignment introduces reading JSON from a server and getting it to display on a client's system.",
+        "<a href=\"https://github.com/jacobalpowers/csce242-assignment14\">Github</a><br><a href=\"https://csce242-assignment14-yx60.onrender.com\">Render Live</a>"));
 
 
     projects.push(new Project(
