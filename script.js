@@ -151,6 +151,12 @@ window.onload = () => {
         "assignment15.png", 
         "This assignment introduces sending files and data to a server for the files to be stored locally and then displayed on the website.",
         "<a href=\"https://github.com/jacobalpowers/csce242-assignment15\">Github</a><br><a href=\"https://csce242-assignment15.onrender.com\">Render Live</a>"));
+    assignments.push(new Assignment(
+        "Assignment 17 - Server Edit and Delete", 
+        "", 
+        "assignment17.png", 
+        "This assignment continues the previous assignment and pushes developers to learn to edit and delete items in a database.",
+        "<a href=\"https://github.com/jacobalpowers/csce242-assignment17\">Github</a><br><a href=\"https://csce242-assignment17-kaab.onrender.com\">Render Live</a>"));
 
 
     projects.push(new Project(
