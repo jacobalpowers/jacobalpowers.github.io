@@ -176,7 +176,7 @@ window.onload = () => {
         "This is the HTML and CSS foundations for the \"Shop 4 Cards\" project."));*/
     projects.push(new Project(
         "Project 7 - Backend Implementation", 
-        "projects/part7/home.html", 
+        "https://jacobalpowers-github-io.onrender.com", 
         "project7.png", 
         "This is the final result for the \"Shop 4 Cards\" project."));
 

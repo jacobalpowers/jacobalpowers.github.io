@@ -3,15 +3,15 @@
     "name": "Ragavan, Nimble Pilferer",
     "game": "Magic the Gathering",
     "set": "Multiverse Legends",
-    "img": "ragavan.jpeg",
+    "img": "ragavan.jpg",
     "description": {
-      "effect": "Whenever Ragavan, Nimble Pilferer deals combat damage to a player, create a Treasure token and exile the top card of that player’s library. Until end of turn, you may cast that card.\nDash 1R (You may cast this spell for its dash cost. If you do, it gains haste, and it’s returned from the battlefield to its owner’s hand at the beginning of the next end step.)",
+      "text": "Whenever Ragavan, Nimble Pilferer deals combat damage to a player, create a Treasure token and exile the top card of that player’s library. Until end of turn, you may cast that card.\nDash 1R (You may cast this spell for its dash cost. If you do, it gains haste, and it’s returned from the battlefield to its owner’s hand at the beginning of the next end step.)",
       "power/toughness": "2/1",
       "type": "Legendary Creature - Monkey Pirate",
       "color": [
         "red"
       ],
-      "cmc": "1"
+      "cost": "1"
     }
 },
 {
@@ -19,9 +19,9 @@
     "name": "Animar, Soul of Elements",
     "game": "Magic the Gathering",
     "set": "Double Masters 2022",
-    "img": "animar.jpeg",
+    "img": "animar.jpg",
     "description": {
-      "effect": "Protection from white and from black\\nWhenever you cast a creature spell, put a +1/+1 counter on Animar, Soul of Elements.\\nCreature spells you cast cost 1 less to cast for each +1/+1 counter on Animar.",
+      "text": "Protection from white and from black\\nWhenever you cast a creature spell, put a +1/+1 counter on Animar, Soul of Elements.\\nCreature spells you cast cost 1 less to cast for each +1/+1 counter on Animar.",
       "power/toughness": "1/1",
       "type": "Legendary Creature - Elemental",
       "color": [
@@ -29,7 +29,7 @@
         "blue",
         "red"
       ],
-      "cmc": "3"
+      "cost": "3"
     }
 },
 {
@@ -37,15 +37,15 @@
     "name": "Rhystic Study",
     "game": "Magic the Gathering",
     "set": "Jumpstart",
-    "img": "rhystic.jpeg",
+    "img": "rhystic.jpg",
     "description": {
-        "effect": "Whenever an opponent casts a spell, you may draw a card unless that player pays 1.",
+        "text": "Whenever an opponent casts a spell, you may draw a card unless that player pays 1.",
         "power/toughness": "",
         "type": "Enchantment",
         "color": [
         "blue"
         ],
-        "cmc": "3"
+        "cost": "3"
     }
 },
 {
@@ -87,7 +87,7 @@
     "set": "Paradox Rift",
     "img": "ancientbooster.png",
     "description": {
-        "type": "",
+        "type": "Trainer",
         "hp": 0,
         "card_type": "Trainer - Tool",
         "weakness": "",
@@ -101,7 +101,7 @@
     "name": "Kashtira Fenrir",
     "game": "Yugioh",
     "set": "Darkwing Blast",
-    "img": "fenrir.jpeg",
+    "img": "fenrir.jpg",
     "description": {
         "type": "Psychic / Effect",
         "atk": "2400",
@@ -115,7 +115,7 @@
     "name": "Ninjitsu Art Notebook of Mystery",
     "game": "Yugioh",
     "set": "Darkwing Blast",
-    "img": "notebook.jpeg",
+    "img": "notebook.jpg",
     "description": {
         "type": "Spell / Quick-Play",
         "atk": "",
@@ -129,7 +129,7 @@
     "name": "PSY-Framelord Omega",
     "game": "Yugioh",
     "set": "Battles of Legend: Light's Revenge",
-    "img": "omega.jpeg",
+    "img": "omega.jpg",
     "description": {
         "type": "Psychic / Synchro / Effect",
         "atk": "2800",
