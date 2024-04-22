@@ -94,8 +94,8 @@ body {
     padding: 20px;
 }
 .card_display img {
-    height: 100%;
-    width: auto;
+    max-width: 40%;
+    height: auto;
 }
 #card_text {
     text-align: left;

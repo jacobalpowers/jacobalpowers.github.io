@@ -19,7 +19,6 @@ const showCards = async () => {
     }
 
 
-    console.log(cardJSON);
     cardJSON.forEach(card =>  {
         let cardItem = document.createElement("div");
         cardItem.classList.add("card_item");
