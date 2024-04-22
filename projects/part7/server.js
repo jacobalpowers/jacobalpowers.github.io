@@ -19,7 +19,7 @@ const cardSchema = new mongoose.Schema({
     game: String,
     set: String,
     img: String,
-    description: [String],
+    description: String,
 });
 
 const Card = mongoose.model("Card", cardSchema);
@@ -221,37 +221,21 @@ let cardJSON = [{
 
 ];
 
-const convertJSON = async () => {
-    const url = "https://jacobalpowers-github-io.onrender.com/api/cards";
 
-    try {
-        const response = await fetch(url);
-        return await response.json();
-    } catch (error) {
-        console.log(error);
-    }
+const createCard = async (item) => {
+    const card = new Card ({
+        _id: item._id,
+        name: item.name,
+        game: item.game,
+        set: item.set,
+        img: item.img,
+        description: item.description,
+    });
 
-
-
-
-    /*for (let i in cardJSON) {
-        let i = cardJSON.find()
-        const cardClass = new Card({
-            _id: i._id,
-            name: i.name,
-            game: i.game,
-            set: i.set,
-            img: i.img,
-            description: i.description,
-        });
-        const result = await cardClass.save();
-        console.log(result);
-    }*/
-};
-//convertJSON();
-
-const showCards = async () => {
-    let cards = convertJSON();
-    console.log(cards);
+    const result = await card.save();
+    console.log(result);
 }
 
+for (let i in cardJSON) {
+    createCard(i);
+}
