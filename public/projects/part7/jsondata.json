@@ -1,45 +1,5 @@
-const express = require("express");
-const app = express();
-const joi = require("joi");
-const mongoose = require("mongoose");
-const multer = require("multer");
-app.use(express.static("public"));
-app.use(express.json());
-const cors = require("cors");
-app.use(cors());
-
-mongoose
-    .connect("mongodb+srv://japowers:RUD1IMizJvcIr6Q4@data.wtiy9yq.mongodb.net/")
-    .then(() => console.log("Connected to mongodb..."))
-    .catch((err) => console.error("Could not connect to mongodb...", err));
-
-const cardSchema = new mongoose.Schema({
-    _id: Number,
-    name: String,
-    game: String,
-    set: String,
-    img: String,
-    description: [String],
-});
-
-const Card = mongoose.model("Card", cardSchema);
-
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + "/index.html");
-});
-
-
-app.listen(3000, () => {
-    console.log("I'm Listening");
-});
-
-app.get("/api/cards", (req, res) => {
-    res.json(cardJSON);
-});
-
-
-let cardJSON = [{
-    "_id": 1,
+[{
+    "_id": 0,
     "name": "Ragavan, Nimble Pilferer",
     "game": "Magic the Gathering",
     "set": "Multiverse Legends",
@@ -48,12 +8,14 @@ let cardJSON = [{
       "effect": "Whenever Ragavan, Nimble Pilferer deals combat damage to a player, create a Treasure token and exile the top card of that player’s library. Until end of turn, you may cast that card.\nDash 1R (You may cast this spell for its dash cost. If you do, it gains haste, and it’s returned from the battlefield to its owner’s hand at the beginning of the next end step.)",
       "power/toughness": "2/1",
       "type": "Legendary Creature - Monkey Pirate",
-      "color": ["red"],
+      "color": [
+        "red"
+      ],
       "cmc": "1"
     }
 },
 {
-    "_id": 2,
+    "_id": 1,
     "name": "Animar, Soul of Elements",
     "game": "Magic the Gathering",
     "set": "Double Masters 2022",
@@ -62,12 +24,16 @@ let cardJSON = [{
       "effect": "Protection from white and from black\\nWhenever you cast a creature spell, put a +1/+1 counter on Animar, Soul of Elements.\\nCreature spells you cast cost 1 less to cast for each +1/+1 counter on Animar.",
       "power/toughness": "1/1",
       "type": "Legendary Creature - Elemental",
-      "color": ["green", "blue", "red"],
+      "color": [
+        "green",
+        "blue",
+        "red"
+      ],
       "cmc": "3"
     }
 },
 {
-    "_id": 3,
+    "_id": 2,
     "name": "Rhystic Study",
     "game": "Magic the Gathering",
     "set": "Jumpstart",
@@ -76,12 +42,14 @@ let cardJSON = [{
         "effect": "Whenever an opponent casts a spell, you may draw a card unless that player pays 1.",
         "power/toughness": "",
         "type": "Enchantment",
-        "color": ["blue"],
+        "color": [
+        "blue"
+        ],
         "cmc": "3"
     }
 },
 {
-    "_id": 4,
+    "_id": 3,
     "name": "Iron Crown",
     "game": "Pokemon",
     "set": "Temporal Forces",
@@ -97,7 +65,7 @@ let cardJSON = [{
     }
 },
 {
-    "_id": 5,
+    "_id": 4,
     "name": "Meltan",
     "game": "Pokemon",
     "set": "Temporal Forces",
@@ -113,7 +81,7 @@ let cardJSON = [{
     }
 },
 {
-    "_id": 6,
+    "_id": 5,
     "name": "Ancient Booster Energy Capsule",
     "game": "Pokemon",
     "set": "Paradox Rift",
@@ -129,7 +97,7 @@ let cardJSON = [{
     }
 },
 {
-    "_id": 7,
+    "_id": 6,
     "name": "Kashtira Fenrir",
     "game": "Yugioh",
     "set": "Darkwing Blast",
@@ -143,7 +111,7 @@ let cardJSON = [{
     }
 },
 {
-    "_id": 8,
+    "_id": 7,
     "name": "Ninjitsu Art Notebook of Mystery",
     "game": "Yugioh",
     "set": "Darkwing Blast",
@@ -157,7 +125,7 @@ let cardJSON = [{
     }
 },
 {
-    "_id": 9,
+    "_id": 8,
     "name": "PSY-Framelord Omega",
     "game": "Yugioh",
     "set": "Battles of Legend: Light's Revenge",
@@ -171,7 +139,7 @@ let cardJSON = [{
     }
 },
 {
-    "_id": 10,
+    "_id": 9,
     "name": "Sugar",
     "game": "One Piece",
     "set": "WINGS OF THE CAPTAIN-[OP06]",
@@ -180,14 +148,16 @@ let cardJSON = [{
         "type": "Donquixote Pirates",
         "power": "0",
         "counter": "1000",
-        "color": ["Green"],
+        "color": [
+            "Green"
+        ],
         "cost": "2",
         "attribute": "Special",
         "text": "[Opponent's Turn] [Once Per Turn] When your opponent plays a Character, if your Leader has the {Donquixote Pirates} type, rest up to 1 of your opponent's Characters. Then, rest this Character.\\n[On Play] Rest up to 1 of your opponent's Characters with a cost of 4 or less."
     }
 },
 {
-    "_id": 11,
+    "_id": 10,
     "name": "Gecko Moria",
     "game": "One Piece",
     "set": "WINGS OF THE CAPTAIN-[OP06]",
@@ -196,14 +166,16 @@ let cardJSON = [{
         "type": "The Seven Warlords of the Sea/Thriller Bark Pirates",
         "power": "5000",
         "counter": "",
-        "color": ["Black"],
+        "color": [
+            "Black"
+        ],
         "cost": "",
         "attribute": "Special",
         "text": "[DON!! x1] [When Attacking] ➁ (You may rest the specified number of DON!! cards in your cost area.) You may trash 1 card from your hand: Trash 2 cards from the top of your deck and play up to 1 {Thriller Bark Pirates} type Character card with a cost of 4 or less from your trash."
     }
 },
 {
-    "_id": 12,
+    "_id": 11,
     "name": "Radical Beam!!",
     "game": "One Piece",
     "set": "ROMANCE DAWN- [OP01]",
@@ -212,46 +184,13 @@ let cardJSON = [{
         "type": "Straw Hat Crew",
         "power": "",
         "counter": "",
-        "color": ["Red"],
+        "color": [
+            "Red"
+        ],
         "cost": "1",
         "attribute": "",
         "text": "[Counter] Up to 1 of your Leader or Character cards gains +2000 power during this battle. Then, if you have 2 or less Life cards, that card gains an additional +2000 power.\\n\\n[Trigger] Up to 1 of your Leader or Character cards gains +1000 power during this turn."
     }
 }
 
-];
-
-const convertJSON = async () => {
-    const url = "https://jacobalpowers-github-io.onrender.com/api/cards";
-
-    try {
-        const response = await fetch(url);
-        return await response.json();
-    } catch (error) {
-        console.log(error);
-    }
-
-
-
-
-    /*for (let i in cardJSON) {
-        let i = cardJSON.find()
-        const cardClass = new Card({
-            _id: i._id,
-            name: i.name,
-            game: i.game,
-            set: i.set,
-            img: i.img,
-            description: i.description,
-        });
-        const result = await cardClass.save();
-        console.log(result);
-    }*/
-};
-//convertJSON();
-
-const showCards = async () => {
-    let cards = convertJSON();
-    console.log(cards);
-}
-
+]
