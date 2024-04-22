@@ -236,6 +236,6 @@ const createCard = async (item) => {
     console.log(result);
 }
 
-for (let i in cardJSON) {
+/*for (let i in cardJSON) {
     createCard(i);
-}
+}*/
