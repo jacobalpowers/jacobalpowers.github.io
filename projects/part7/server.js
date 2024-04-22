@@ -37,7 +37,7 @@ app.get("/api/cards", (req, res) => {
     getCards(res);
 });
 
-const getCards = async () => {
+const getCards = async (res) => {
     const cards = await Card.find();
     res.send(cards);
 }
