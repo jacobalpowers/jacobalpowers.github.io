@@ -25,7 +25,7 @@ const cardSchema = new mongoose.Schema({
 const Card = mongoose.model("Card", cardSchema);
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + "/index.html");
+    res.sendFile(__dirname + "/public/home.html");
 });
 
 
