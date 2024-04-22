@@ -174,6 +174,11 @@ window.onload = () => {
         "projects/part3/home.html", 
         "project3.png", 
         "This is the HTML and CSS foundations for the \"Shop 4 Cards\" project."));*/
+    projects.push(new Project(
+        "Project 7 - Backend Implementation", 
+        "projects/part7/home.html", 
+        "project7.png", 
+        "This is the final result for the \"Shop 4 Cards\" project."));
 
 
 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--Jake Powers CSCE 242-->
+<html lang="en">
+    <head>
+        <title>Account</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <section id="navbar">
+            <div id="logo_name">
+                <a href="../home.html"><img id="logo" src="../images/logo.gif"></a>
+                <a id="site_name" href="../home.html">Shop 4 Cards</a>
+            </div>
+            <div id="form">
+                <select name="game" id="games">
+                    <option selected value="all" >All</option>
+                    <option value="pokemon">Pokemon</option>
+                    <option value="mtg">Magic the Gathering</option>
+                    <option value="yugioh">Yugioh</option>
+                    <option value="onepiece">One Piece</option>
+                </select>
+                <input type="text" placeholder="Search for Cards">
+                <img id="search_img" src="../images/search icon.png">
+            </div>
+            <div id="account_div">
+                <a href="#"><img id="account" src="../images/account.png"></a>
+            </div>
+        </section>
+        <section id="account_body">
+            <div id="account_info">
+                <p><b>Account Name: </b></p>
+                <p><b>Email: </b></p>
+                <p><b>Credit on Account: </b></p>
+                <p><b># of cards currently listed: </b></p>
+                <p><b>Current value listed: </b></p>
+                <p><b># of cards purchased: </b></p>
+                <p><b>Current value purchased: </b></p>
+            </div>
+            <div id="recent_activity">
+                <div id="recent_sales">
+                    <h2>Recent Sales:</h2>
+                    <div class="flex" id="sales">
+                        <div class="card_item">
+                            <img src="../images/dotd1.gif">
+                            <p>Card Name</p>
+                            <p>Price Sold For</p>
+                        </div>
+                        <div class="card_item">
+                            <img src="../images/dotd2.gif">
+                            <p>Card Name</p>
+                            <p>Price Sold For</p>
+                        </div>
+                        <div class="card_item">
+                            <img src="../images/dotd3.gif">
+                            <p>Card Name</p>
+                            <p>Price Sold For</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="recent_purchases">
+                    <h2>Recent Purchases:</h2>
+                    <div class="flex" id="purchases">
+                        <div class="card_item">
+                            <img src="../images/dotd1.gif">
+                            <p>Card Name</p>
+                            <p>Price Bought For</p>
+                        </div>
+                        <div class="card_item">
+                            <img src="../images/dotd2.gif">
+                            <p>Card Name</p>
+                            <p>Price Bought For</p>
+                        </div>
+                        <div class="card_item">
+                            <img src="../images/dotd3.gif">
+                            <p>Card Name</p>
+                            <p>Price Bought For</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
