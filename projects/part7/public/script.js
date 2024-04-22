@@ -20,6 +20,7 @@ const populatePage = () => {
     const recentSales = document.getElementById("recent_sales");
     createDisplay(recentPurchases, 5);
     createDisplay(recentSales, 5);
+    createDOTD();
 }
 
 const createDisplay = async (dest, times) => {
@@ -55,6 +56,41 @@ const createDisplay = async (dest, times) => {
         cardText.append(cardPrice);
         cardDisplay.append(cardText);
         dest.append(cardDisplay);
+    }
+}
+
+const createDOTD = async () => {
+    let cardJSON = await getJSON();
+    const cardList = document.getElementById("card_list");
+    if (cardJSON == "") {
+        return;
+    }
+    const deals = document.getElementById("deal_of_the_day");
+    
+
+    for (var i = 0; i < 3; i++) {
+        var random = getRandomInt(cardJSON.length);
+        const currentCard = cardJSON[random];
+        
+        const dotd = document.createElement("div");
+        dotd.classList.add("dotd");
+
+        const cardName = document.createElement("p");
+        cardName.innerText = currentCard.name;
+        dotd.append(cardName);
+
+        const dotdText = document.createElement("p");
+        dotdText.innerText = "Deal of the Day";
+        dotd.append(dotdText);
+
+        const dotdDiscount = document.createElement("h5");
+        dotdDiscount.innerText = getRandomInt(50) + "% Off";
+        dotd.append(dotdDiscount);
+
+        const dotdImage = document.createElement("img");
+        dotdImage.src = "images/" + currentCard.img;
+        dotd.append(dotdImage);
+        deals.append(dotd);
     }
 }
 
