@@ -157,6 +157,12 @@ window.onload = () => {
         "assignment17.png", 
         "This assignment continues the previous assignment and pushes developers to learn to edit and delete items in a database.",
         "<a href=\"https://github.com/jacobalpowers/csce242-assignment17\">Github</a><br><a href=\"https://csce242-assignment17-kaab.onrender.com\">Render Live</a>"));
+    assignments.push(new Assignment(
+        "Assignment 18 - Server CRUD with MongoDB", 
+        "", 
+        "assignment17.png", 
+        "This assignment continues the previous assignment and integrates databases onto MongoDB rather than locally.",
+        "<a href=\"https://github.com/jacobalpowers/csce242-assignment17\">Github</a><br><a href=\"https://csce242-assignment18-iqe2.onrender.com\">Render Live</a>"));
 
 
     projects.push(new Project(
