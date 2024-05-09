@@ -1,6 +1,6 @@
 body {
     background-color: bisque;
-
+    background:url(images/green-1405282.jpg);
 }
 #nav-bar {
     display:flex;
@@ -17,18 +17,32 @@ body {
     text-align: center;
     background-color: cadetblue;
 }
+.nav-element:hover {
+    color: darkslategray;
+}
 a {
     text-decoration: none;
     color: inherit;
+    padding: 10px;
 }
 .margin-top {
     margin-top: 100px;
 }
 h1 {
     text-align: center;
+    background-color: cadetblue;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
 }
 h2 {
     text-align: center;
+    background-color: cadetblue;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
 }
 p {
     border: 1px solid blue;
@@ -62,4 +76,5 @@ table {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    background-color: white;
 }

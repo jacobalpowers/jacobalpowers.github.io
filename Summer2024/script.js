@@ -83,6 +83,11 @@ window.onload = () => {
         "assignments/assignment2/index.html", 
         "assignment1.png", 
         "This assignment was designed to get us comfortable with basic HTML and rudamentary website development."));
+    assignments.push(new Assignment(
+        "Assignment 3 - Layout with Flex", 
+        "assignments/assignment3/index.html", 
+        "assignment1.png", 
+        "Basic Flexboxing with mobile reframing."));
 
 
 
