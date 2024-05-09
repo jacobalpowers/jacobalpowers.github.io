@@ -1,0 +1,17 @@
+/* Structure */
+:root {
+    --primary-color: salmon;
+    --secondary-color: grey;
+    --background-color: tan;
+}
+body {
+    background-color: var(--background-color);
+}
+
+
+/* Typography */
+
+
+
+
+/* Larger Resolutions */

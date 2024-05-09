@@ -82,7 +82,7 @@ window.onload = () => {
         "Assignment 2 - Basic CSS", 
         "assignments/assignment2/index.html", 
         "assignment2.png", 
-        "This assignment was designed to get us comfortable with basic HTML and rudamentary website development."));
+        "Basic CSS fundamentals."));
     assignments.push(new Assignment(
         "Assignment 3 - Layout with Flex", 
         "assignments/assignment3/index.html", 
