@@ -95,7 +95,7 @@ window.onload = () => {
         "Formatting this main assignment page."));
 
 
-    projects.push(new Project (
+    projects.push(new Project(
         "Project 1 - Topic Selection",
         "projects/part1/Semester Project Pt 1 - Topic Selection Summer 2024.pdf",
         "placeholder.gif",
