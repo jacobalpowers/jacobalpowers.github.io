@@ -1,11 +1,330 @@
 /* Structure */
 :root {
-    --primary-color: salmon;
-    --secondary-color: grey;
-    --background-color: tan;
+    --primary-color: #73000A;
+    --secondary-color: #000000;
+    --border-color: grey;
+    --hover-color: rgb(201, 201, 201);
+    --background-color: white;
+    --topic-title-font-size: 24px;
+    --default-font-size: 16px;
 }
 body {
+    margin: 0px;
+    padding: 0px;
+}
+main a {
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+.desktop {
+    display: none;
+    flex-direction: row;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+#banner {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+#banner a {
+    padding-left: 1%;
+    padding-right: 1%;
+    text-wrap: nowrap;
+    width: auto;
+}
+#gateways {
+    display: flex;
+    flex-direction: row;
+}
+#default-gateways {
+    display: flex;
+    flex-direction: row;
+}
+
+#logo-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#logo-search img {
+    height: 40px;
+    width: 200px;
+    padding: 10px;
+}
+#logo-search input {
+    height: 2%;
+}
+#search-icon {
+    border: solid 1px white;
+    position: absolute;
+    top: 10px;
+    right: 70px;
+    font-size: 30px;
+    margin: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    height: 30px;
+    transform: scaleX(-1);
+}
+#menu {
+    border: solid 1px white;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-align: center;
+    height: 40px;
+}
+#menu p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 8px;
+}
+#menu img {
+    height: 25px;
+    width: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+#school-of {
+    background-color: var(--primary-color);
+    color: white;
+    padding-bottom: 1px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    padding-left: 5px;
+    padding-bottom: 6px;
+    padding-top: 2px;
+}
+#school-of h3 {
+    margin: 0px;
+}
+
+
+main {
     background-color: var(--background-color);
+    font-family: "Berlingske Sans", "Arial", sans-serif;
+}
+content h1, content h2, content h3 {
+    color: var(--primary-color);
+    margin: 0;
+}
+content h3 {
+    font-size: var(--topic-title-font-size);
+}
+content p, content li {
+    font-size: var(--default-font-size);
+    line-height: 1.8em;
+}
+content {
+    display: block;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#about h2 {
+    font-size: 26px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+#about p {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-top: 1%;
+}
+.image-container {
+    text-align: center;
+    margin-top: 2%;
+}
+.image-container img {
+    aspect-ratio: 33 / 14;
+    width: 825px;
+    max-width: 100%;
+}
+#power-promise ul {
+    padding-left: 15px;
+}
+#power-promise li {
+    font-weight: bold;
+}
+
+#drop-downs {
+    display: flex;
+    flex-direction: column;
+}
+.drop-down-item {
+    display: flex;
+    flex-direction: row;
+    color: var(--primary-color);
+    font-weight: bolder;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 1px solid grey;
+}
+.drop-down-item:hover {
+    background-color: var(--hover-color);
+}
+.drop-down-item p {
+    max-width: 85%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.plus {
+    position: absolute;
+    right: 18px;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    padding-top: 2px;
+    padding-left: 11px;
+    padding-right: 0px;
+    padding-bottom: 9px;
+    width: 20px;
+    height: 20px;
+}
+
+#hallmarks h3 {
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+.bordered-section {
+    border: solid 1px var(--border-color);
+    border-left: solid 4px var(--primary-color);
+    margin-bottom: 2%;
+    padding-left: 1%;
+    padding-top: 2%;
+}
+#magazines p {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#music-footer {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--hover-color);
+    padding-left: 1%;
+    padding-top: 3%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+#music-footer h3 {
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.right-align {
+    position: absolute;
+    right: 3%;
+}
+#music-footer-nav {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+#music-footer-nav p {
+    margin: 0;
+    flex: 1;
+    text-wrap: nowrap;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+}
+footer p {
+    margin: 0;
+}
+footer hr {
+    margin: 0;
+    margin-bottom: 2%;
+}
+#footer-links {
+    text-align: center;
+    padding-top: 2%;
+}
+#footer-icon img {
+    aspect-ratio: 206 / 41;
+    width: 60%;
+}
+#footer-social-media {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1%;
+}
+#footer-social-media a {
+    flex: 1;
+}
+#footer-social-media img {
+    width: 35px;
+    height: 35px;
+    border: solid white 1px;
+    border-radius: 20px;
+}
+
+
+.footer-nav-section {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    height: 32px;
+    width: fit-content;
+}
+#colleges-schools-nav {
+    height: 400px;
+}
+#offices-divisions-nav {
+    height: 200px;
+}
+#tools-nav {
+    height: 200px;
+}
+
+#footer-final {
+    background-color: var(--secondary-color);
+    border-top: solid 1px white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 12px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+#footer-final a {
+    flex: 1;
+    margin-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 1%;
+    
+}
+#footer-final a:not(:last-child) {
+    border-right: 1px solid white;
+}
+#footer-final p {
+    text-wrap: nowrap;
+    color: white;
 }
 
 
@@ -15,3 +334,9 @@ body {
 
 
 /* Larger Resolutions */
+
+@media only screen and (min-width: 600px) {
+    .desktop {
+        /*display: flex;*/
+    }
+}
