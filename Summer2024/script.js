@@ -93,6 +93,11 @@ window.onload = () => {
         "#", 
         "assignment4.png", 
         "Formatting this main assignment page."));
+    assignments.push(new Assignment(
+        "Assignment 5 - Recreate CSS Page", 
+        "assignments/assignment5/index.html", 
+        "assignment5.png", 
+        "Recreating a website using just HTML and CSS from scratch."));
 
 
     projects.push(new Project(
