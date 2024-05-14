@@ -98,6 +98,11 @@ window.onload = () => {
         "assignments/assignment5/index.html", 
         "assignment5.png", 
         "Recreating a website using just HTML and CSS from scratch."));
+    assignments.push(new Assignment(
+        "Assignment 7 - Introduction to JavaScript", 
+        "assignments/assignment7/index.html", 
+        "assignment7.png", 
+        "Foundational understanding and demonstration of Javascript"));
 
 
     projects.push(new Project(
