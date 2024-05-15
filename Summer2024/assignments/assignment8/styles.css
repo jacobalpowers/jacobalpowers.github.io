@@ -1,0 +1,82 @@
+/* Structure */
+:root {
+    --primary-color: salmon;
+    --secondary-color: grey;
+    --background-color: tan;
+}
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+h1 {
+    background-color: cadetblue;
+    padding: 20px;
+}
+
+#drop-down {
+    text-align: center;
+}
+#arrow-up {
+    display: none;
+    width: fit-content;
+}
+#arrow-down {
+    width: fit-content;
+}
+#nav-bar {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+#nav-bar h3 {
+    flex: 1;
+    width: fit-content;
+}
+#nav-bar a {
+    text-decoration: none;
+    color: black;
+}
+
+#color-slider {
+    background-color: rgb(255, 0, 0);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#color-slider input {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Typography */
+
+
+
+
+/* Larger Resolutions */
+@media only screen and (min-width: 720px) {
+    #nav-bar {
+        flex-direction: row;
+    }
+    #arrow-up {
+        display: none;
+    }
+    #arrow-down {
+        display: none;
+    }
+    #exercise1 {
+        border-right: solid 1px black;
+    }
+}
