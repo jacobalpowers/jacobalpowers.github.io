@@ -111,6 +111,12 @@ window.onload = () => {
         "placeholder.gif",
         "This is the Topic Selection PDF for Summer 2024."
     ));
+    projects.push(new Project(
+        "Project 2 - Wireframes",
+        "projects/part2/index.html",
+        "project2.png",
+        "Designing the initial wireframe of the final project."
+    ));
 
 
 
