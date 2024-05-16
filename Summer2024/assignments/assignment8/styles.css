@@ -24,11 +24,7 @@ h1 {
 #drop-down {
     text-align: center;
 }
-#arrow-up {
-    display: none;
-    width: fit-content;
-}
-#arrow-down {
+#arrow {
     width: fit-content;
 }
 #nav-bar {
@@ -51,6 +47,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: white;
 }
 #color-slider input {
     width: 80%;
@@ -58,6 +55,17 @@ h1 {
     margin-right: auto;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+#chooser {
+    display: none;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    padding: 20px;
+}
+#chooser img {
+    margin-top: 20px;
+    max-width: 400px;
 }
 
 /* Typography */
@@ -70,10 +78,7 @@ h1 {
     #nav-bar {
         flex-direction: row;
     }
-    #arrow-up {
-        display: none;
-    }
-    #arrow-down {
+    #arrow {
         display: none;
     }
     #exercise1 {
