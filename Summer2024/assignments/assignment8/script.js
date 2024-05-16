@@ -9,7 +9,21 @@ const changeRed = () => {
 }
 const changePictureSize = (e) => {
     let img = document.getElementById("picture");
-    console.log(e.target.innerHTML);
+    if (e.innerHTML == "Small") {
+        img.classList.add("small");
+        img.classList.remove("medium");
+        img.classList.remove("large");
+    }
+    if (e.innerHTML == "Medium") {
+        img.classList.add("medium");
+        img.classList.remove("small");
+        img.classList.remove("large");
+    }
+    if (e.innerHTML == "Large") {
+        img.classList.add("large");
+        img.classList.remove("small");
+        img.classList.remove("medium");
+    }
 }
 const toggleExercise1 = () => {
     let sliderItem = document.getElementById("color-slider");
@@ -40,15 +54,14 @@ const toggleArrow = () => {
     arrowDown = !arrowDown;
 }
 
-
-
 window.onload = () => {
     document.getElementById("slider").oninput = changeRed;
     document.getElementById("exercise1").onclick = toggleExercise1;
     document.getElementById("exercise2").onclick = toggleExercise2;
     document.getElementById("arrow").onclick = toggleArrow;
-    const buttons = document.getElementsByClassName("button");
-    for (i in buttons) {
-        i.onclick = changePictureSize;
+
+    let buttons = document.getElementsByClassName("button");
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].onclick = function () {changePictureSize(buttons[i])};
     }
 }
