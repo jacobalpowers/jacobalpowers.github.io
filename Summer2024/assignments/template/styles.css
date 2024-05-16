@@ -6,6 +6,18 @@
 }
 body {
     background-color: var(--background-color);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+h1 {
+    background-color: cadetblue;
+    padding: 20px;
+    border: solid 1px var(--primary-color);
 }
 
 

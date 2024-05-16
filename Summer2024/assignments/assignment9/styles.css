@@ -1,0 +1,67 @@
+/* Structure */
+:root {
+    --primary-color: salmon;
+    --secondary-color: grey;
+    --background-color: tan;
+}
+body {
+    background-color: var(--background-color);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+h1 {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border: solid 1px var(--secondary-color);
+}
+
+#star-section {
+    background-color: var(--primary-color);
+    border: solid 2px var(--secondary-color);
+    height: 500px;
+}
+#star-section p {
+    margin-left: 5%;
+}
+#stars {
+    width: 90%;
+    height: 85%;
+    background-color: black;
+    border: solid 1px yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+.star {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: yellow;
+    width: 10px;
+    height: 10px;
+    clip-path: polygon(50% 0%,
+                        65% 35%,
+                        100% 50%,
+                        65% 65%,
+                        50% 100%,
+                        35% 65%,
+                        0% 50%,
+                        35% 35%);
+}
+
+
+/* Typography */
+
+
+
+
+/* Larger Resolutions */
+@media only screen and (min-width: 720px) {
+
+}
