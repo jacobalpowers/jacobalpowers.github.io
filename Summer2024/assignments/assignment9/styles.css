@@ -23,10 +23,14 @@ h1 {
 #star-section {
     background-color: var(--primary-color);
     border: solid 2px var(--secondary-color);
-    height: 500px;
+    height: 600px;
 }
 #star-section p {
     margin-left: 5%;
+}
+#error-msg {
+    color: darkred;
+    font-weight: bold;
 }
 #stars {
     width: 90%;

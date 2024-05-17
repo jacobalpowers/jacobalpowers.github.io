@@ -108,6 +108,11 @@ window.onload = () => {
         "assignments/assignment8/index.html", 
         "assignment8.png", 
         "Learning conditionals and if statements with JavaScript"));
+    assignments.push(new Assignment(
+        "Assignment 9 - Loops", 
+        "assignments/assignment9/index.html", 
+        "assignment9.png", 
+        "Learning loops and onclick functions with JavaScript"));
 
 
     projects.push(new Project(
