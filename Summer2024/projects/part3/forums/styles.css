@@ -8,12 +8,11 @@ body {
     background-color: var(--background-color);
     margin: 0;
 }
-content {
-    margin-left: 20%;
-    margin-right: 20%;
+#main-content {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
     background-color: var(--secondary-color);
-    width: 500px;
-    height: 800px;
 }
 h1, h2, h3 {
     text-align: center;
@@ -28,6 +27,7 @@ h1 {
 
 #nav-bar {
     position: sticky;
+    top: 0;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -41,7 +41,6 @@ h1 {
 }
 
 /*Main Content*/
-
 h2 {
     background-color: var(--primary-color);
     width: 20%;
@@ -55,8 +54,8 @@ h2 {
 #divider {
     display: flex;
     flex-direction: row;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-top: 5%;
     border-radius: 10px;
     background-color: var(--secondary-color);
@@ -72,7 +71,7 @@ ul {
     flex: 1;
     margin: 0;
     padding: 0;
-    background-color: var(--primary-color);
+    background-color: lightgray;
     list-style-type: none;
 }
 li {
@@ -85,7 +84,30 @@ li {
 #forum-posts {
     flex: 4;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    padding: 2%;
+}
+.forum-post-item {
+    position: relative;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    margin-left: 2%;
+    padding-left: 1%;
+    background-color: var(--background-color);
+}
+#forum-post-title {
+    font-size: 24px;
+    max-width: 70%;
+}
+#details {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+#details p {
+    margin: 0;
+    padding: 0;
 }
 
 

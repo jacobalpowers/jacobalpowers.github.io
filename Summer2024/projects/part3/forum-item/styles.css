@@ -8,12 +8,12 @@ body {
     background-color: var(--background-color);
     margin: 0;
 }
-content {
-    margin-left: 20%;
-    margin-right: 20%;
+#main-content {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
     background-color: var(--secondary-color);
-    width: 500px;
-    height: 800px;
 }
 h1, h2, h3 {
     text-align: center;
@@ -27,7 +27,6 @@ h1 {
 }
 
 #nav-bar {
-    position: sticky;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -39,6 +38,59 @@ h1 {
     text-decoration: none;
 
 }
+
+/* Main Content */
+#content-container {
+    background-color: gray;
+    width: 100%;
+}
+#header {
+    text-align: left;
+    position: relative;
+    border-bottom: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    justify-content: center;
+}
+#forum-title {
+    font-size: 24px;
+    margin: 0;
+    margin-left: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 70%;
+}
+#extra-info {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+}
+#extra-info p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Comment Body */
+#comments-body {
+    margin-top: 50px;
+    padding-bottom: 2%;
+}
+.forum-comment {
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+#poster-name {
+    color: blue;
+    font-size: 20px;
+}
+
 
 
 /* Typography */
