@@ -1,0 +1,52 @@
+/* Structure */
+:root {
+    --primary-color: salmon;
+    --secondary-color: grey;
+    --background-color: tan;
+}
+body {
+    background-color: var(--background-color);
+    margin: 0;
+}
+content {
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: var(--secondary-color);
+    width: 500px;
+    height: 800px;
+}
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+h1 {
+    background-color: cadetblue;
+    padding: 20px;
+    border: solid 1px var(--primary-color);
+}
+
+#nav-bar {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: cadetblue;
+    padding: 20px;
+}
+.nav-item {
+    flex: 1;
+    text-decoration: none;
+
+}
+
+
+/* Typography */
+
+
+
+
+/* Larger Resolutions */
+@media only screen and (min-width: 720px) {
+
+}
