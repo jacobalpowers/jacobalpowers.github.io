@@ -127,6 +127,12 @@ window.onload = () => {
         "project2.png",
         "Designing the initial wireframe of the final project."
     ));
+    projects.push(new Project(
+        "Project 3 - HTML & CSS",
+        "projects/part3/index.html",
+        "project2.png",
+        "Designing the initial wireframe of the final project."
+    ));
 
 
 

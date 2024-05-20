@@ -12,8 +12,6 @@ content {
     margin-left: 20%;
     margin-right: 20%;
     background-color: var(--secondary-color);
-    width: 500px;
-    height: 800px;
 }
 h1, h2, h3 {
     text-align: center;
@@ -37,10 +35,62 @@ h1 {
 .nav-item {
     flex: 1;
     text-decoration: none;
-
 }
 
 
+/*Main Content*/
+
+#divider {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    background-color: var(--secondary-color);
+}
+
+/* Top Content */
+#top-content {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+#pt1 {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+}
+#basic-text {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    margin-left: 2%;
+    padding-left: 1%;
+    border-radius: 10px;
+}
+#pt1 img {
+    width: 30%;
+    height: 30%;
+}
+#sub-texts {
+    display: flex;
+    flex-direction: row;
+}
+.text-items {
+    padding-left: 2%;
+}
+
+#sub-content {
+    padding-left: 2%;
+}
+
+
+/* Bottom Content */
+#bottom-content {
+    padding-left: 2%;
+}
 /* Typography */
 
 

@@ -40,6 +40,54 @@ h1 {
 
 }
 
+/*Main Content*/
+
+h2 {
+    background-color: var(--primary-color);
+    width: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+#divider {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+
+/* Filter */
+#filter-sort {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+ul {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    list-style-type: none;
+}
+li {
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+/* Forum Posts */
+#forum-posts {
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+}
+
 
 /* Typography */
 
