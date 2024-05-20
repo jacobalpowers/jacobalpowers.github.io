@@ -72,6 +72,10 @@ body {
   display: none;
 }
 
+#slideshow p {
+  user-select: none;
+}
+
 #result p {
   background: #223240;
   color: white;
