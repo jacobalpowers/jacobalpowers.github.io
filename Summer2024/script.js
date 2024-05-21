@@ -140,8 +140,6 @@ window.onload = () => {
     ));
 
 
-
-
     for (let i in assignments) {
         assignmentList.append(assignments[i].formatted);
     }
