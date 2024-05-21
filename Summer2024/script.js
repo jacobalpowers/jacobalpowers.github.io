@@ -118,6 +118,11 @@ window.onload = () => {
         "assignments/assignment10/index.html", 
         "assignment10.png", 
         "Messing with arrays and assigning item-specific onclicks."));
+    assignments.push(new Assignment(
+        "Assignment 11 - Classes", 
+        "assignments/assignment11/index.html", 
+        "assignment11.png", 
+        "Learning to manipulate classes and class functions as well as assigning anonymous onclick functions to items."));
 
 
     projects.push(new Project(

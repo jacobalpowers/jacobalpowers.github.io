@@ -4,17 +4,21 @@
     <head>
         <title></title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script src="script.js"></script>
     </head>
 
     <body>
         <h1>Assignment 11</h1>
         <h2>Classes</h2>
-        <section id="composer-items">
-            <div class="composer">
-                <h3>Bach</h3>
-                <img src="images/bach.jpg">
+        <section id="composer-items"></section>
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <section id="main-modal-content"></section>
+                </div>
             </div>
-        </section>
+        </div>
     </body>
 </html>
