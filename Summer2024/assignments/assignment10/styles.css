@@ -1,0 +1,60 @@
+/* Structure */
+:root {
+    --primary-color: salmon;
+    --secondary-color: grey;
+    --background-color: tan;
+}
+body {
+    background-color: var(--background-color);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+h1 {
+    background-color: cadetblue;
+    padding: 20px;
+    border: solid 1px var(--primary-color);
+}
+
+
+/* Main Content */
+#main-content {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid cadetblue;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: purple;
+}
+#image-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2.5%;
+    margin-bottom: 1%;
+    border: 1px solid cadetblue;
+    justify-content: center;
+    
+}
+#image-list img {
+    width: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+/* Typography */
+
+
+
+
+/* Larger Resolutions */
+@media only screen and (min-width: 720px) {
+
+}

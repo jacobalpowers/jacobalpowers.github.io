@@ -113,6 +113,11 @@ window.onload = () => {
         "assignments/assignment9/index.html", 
         "assignment9.png", 
         "Learning loops and onclick functions with JavaScript"));
+    assignments.push(new Assignment(
+        "Assignment 10 - Arrays", 
+        "assignments/assignment10/index.html", 
+        "assignment10.png", 
+        "Messing with arrays and assigning item-specific onclicks."));
 
 
     projects.push(new Project(
@@ -130,8 +135,8 @@ window.onload = () => {
     projects.push(new Project(
         "Project 3 - HTML & CSS",
         "projects/part3/index.html",
-        "project2.png",
-        "Designing the initial wireframe of the final project."
+        "project3.png",
+        "Designing basic HTML and CSS for final project."
     ));
 
 
