@@ -1,0 +1,45 @@
+/* Structure */
+:root {
+    --primary-color: salmon;
+    --secondary-color: grey;
+    --background-color: tan;
+}
+body {
+    background-color: var(--background-color);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+h1 {
+    background-color: cadetblue;
+    padding: 20px;
+    border: solid 1px var(--primary-color);
+}
+
+/* Main Section */
+#composer-items {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.composer {
+    background-color: var(--secondary-color);
+    flex: 1;
+    max-width: 24%;
+}
+
+/* Typography */
+
+
+
+
+/* Larger Resolutions */
+@media only screen and (min-width: 720px) {
+
+}
