@@ -143,6 +143,12 @@ window.onload = () => {
         "project3.png",
         "Designing basic HTML and CSS for final project."
     ));
+    projects.push(new Project(
+        "Project 4 - Colors - Pictures - Text",
+        "projects/part4/index.html",
+        "project4.png",
+        "Filled in blank or dummy colors, pictures, and text with proper values for final project."
+    ));
 
 
     for (let i in assignments) {
