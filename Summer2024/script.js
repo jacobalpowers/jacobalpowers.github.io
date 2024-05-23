@@ -123,6 +123,11 @@ window.onload = () => {
         "assignments/assignment11/index.html", 
         "assignment11.png", 
         "Learning to manipulate classes and class functions as well as assigning anonymous onclick functions to items."));
+    assignments.push(new Assignment(
+        "Assignment 12 - Parsing JSON", 
+        "assignments/assignment12/index.html", 
+        "assignment12.png", 
+        "Basic JSON file parsing and fetching information from an external database."));
 
 
     projects.push(new Project(

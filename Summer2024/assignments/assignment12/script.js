@@ -23,11 +23,15 @@ const showIceCream = async () => {
 
         const name = document.createElement("p");
         name.innerHTML = item.name;
+        name.classList.add("hidden");
         iceCreamSection.append(name);
 
         iceCreamSection.onmouseover = () => {
-            name.setAttribute("display", "block");
+            name.classList.toggle("hidden");
         };
+        iceCreamSection.onmouseout = () => {
+            name.classList.toggle("hidden");
+        }
         iceCreamList.append(iceCreamSection);
     });
 }
