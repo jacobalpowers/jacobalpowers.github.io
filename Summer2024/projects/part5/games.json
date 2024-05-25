@@ -1,0 +1,28 @@
+[
+    {
+        "title": "Brass: Birmingham",
+        "release-date": 0,
+        "rank": 1,
+        "price": 79.99,
+        "image": "brassBirmingham.jpg"
+    },{
+        "title": "Pandemic Legacy: Season 1",
+        "release-date": 0,
+        "rank": 2,
+        "price": 89.99,
+        "image": "pandemicLegacy.webp"
+    },{
+        "title": "Gloomhaven",
+        "release-date": "2017",
+        "rank": 3,
+        "price": 159.99,
+        "image": "gloomhaven.webp"
+    },
+    {
+        "title": "Ark Nova",
+        "release-date": 0,
+        "rank": 4,
+        "price": 74.99,
+        "image": "arkNova.webp"
+    }
+]

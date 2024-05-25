@@ -1,0 +1,154 @@
+/* Structure */
+:root {
+    --primary-color: #98C9A3;
+    --secondary-color: #606C38;
+    --nav-color: #283618;
+    --nav-text-color: #BC6C25;
+}
+body {
+    background-color: var(--primary-color);
+    margin: 0;
+}
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+h1 {
+    background-color: cadetblue;
+    padding: 20px;
+    border: solid 1px var(--primary-color);
+}
+
+/* Nav Bar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+#nav-bar {
+    
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: var(--nav-color);
+    padding: 20px;
+}
+.nav-item {
+    flex: 1;
+    text-decoration: none;
+    color: var(--nav-text-color);
+}
+
+/*Main Content*/
+
+#divider {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+
+/* Filter */
+#filter {
+    display: none;
+    flex-direction: column;
+    flex: 1;
+}
+ul {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    list-style-type: none;
+}
+li {
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+/*Item Display*/
+#main-items {
+    flex: 4;
+}
+#item-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.game-item {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary-color);
+    height: 100%;
+    width: 90%;
+    margin-left: 2%;
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 22px;
+}
+.game-item img {
+    width: 50%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+#text-section {
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: left;
+}
+#game-title {
+    font-weight: bold;
+}
+
+#page-changer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#page-changer button {
+    width: 80px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+
+/* Typography */
+
+
+
+
+/* Larger Resolutions */
+@media only screen and (min-width: 720px) {
+    #filter {
+        display: flex;
+    }
+    #item-list {
+        flex-direction: row;
+    }
+    .game-item {
+        flex-direction: column;
+        height: 25%;
+        width: 25%;
+    }
+    .game-item img {
+        width: 80%;
+    }
+    #text-section {
+        text-align: center;
+        font-size: 16px;
+    }
+}
