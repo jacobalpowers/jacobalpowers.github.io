@@ -11,11 +11,33 @@ const getGames = async () => {
 
 const displayGames = async () => {
     const json = await getGames();
+    const ratings = document.getElementById("high-ratings");
     
     json.forEach(async (e) => {
-        console.log(e);
+        const div = document.createElement("div");
+        div.classList.add("game-item");
+
+        const img = document.createElement("img");
+        img.src = `images/${e.image}`;
+        div.append(img);
+
+        const title = document.createElement("p");
+        title.innerHTML = `${e.title}`;
+        div.append(title);
+
+        const ranking = document.createElement("p");
+        ranking.innerHTML = `${e.rank}`;
+        div.append(ranking);
+
+        const price = document.createElement("p");
+        price.innerHTML = `${e.price}`;
+        div.append(price);
+
+        ratings.append(div);
     });
 }
+
+displayGames();
 
 window.onload = () => {
     

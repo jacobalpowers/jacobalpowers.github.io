@@ -135,7 +135,8 @@ nav {
     text-align: center;
 }
 .game-item img {
-    max-width: 80%;
+    max-width: 90%;
+    max-height: 50%;
     aspect-ratio: 1/1;
     /*aspect-ratio: 16/9;*/
 }
