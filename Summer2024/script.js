@@ -154,6 +154,12 @@ window.onload = () => {
         "project4.png",
         "Filled in blank or dummy colors, pictures, and text with proper values for final project."
     ));
+    projects.push(new Project(
+        "Project 5 - JSON File Parsing",
+        "projects/part5/index.html",
+        "project4.png",
+        "Created JSON file to store relevent data and populate rather than hard coded data."
+    ));
 
 
     for (let i in assignments) {
