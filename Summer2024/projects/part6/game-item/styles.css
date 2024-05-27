@@ -93,7 +93,10 @@ nav {
 /* Bottom Content */
 #bottom-content {
     padding-left: 2%;
+    padding-top: 3%;
+    padding-bottom: 2%;
     height: 100%;
+    text-align: center;
 }
 /* Typography */
 

@@ -4,6 +4,7 @@
     <head>
         <title>Board at Home - Home</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script src="script.js"></script>
     </head>
     
@@ -14,10 +15,58 @@
                 <a id="link-games" class="nav-item" href="../games/index.html">Games</a>
                 <a id="link-discover" class="nav-item" href="../game-item/index.html">Discover a new game</a>
                 <a id="link-forums" class="nav-item" href="../forums/index.html">Forums</a>
+                <a id="link-contact-me" class="nav-item" href="../contact/index.html">Contact Me</a>
             </div>
         </nav>
         
         <content>
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content">
+                    <div class="w3-container">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <section id="main-modal-content">
+                            <form id="new-item">
+                                <div id="modal-divider">
+                                    <!-- For now this is not included, will add once server side implementation is started-->
+                                    <!--<div id="image-interaction">
+                                        <img src="crafts/blank.gif" id="upload_image">
+                                        <input type="file" id="image" name="image" accept="image/*">
+                                    </div>-->
+                                    <div id="text-interaction">
+                                        <p>
+                                            <label for="game-name">Game Name:</label>
+                                            <input
+                                            type="text"
+                                            id="game-name"
+                                            name="game-name"
+                                            required
+                                            minlength="3"
+                                        />
+                                        </p>
+                                        <p>
+                                            <label for="release-date">Release Date:</label>
+                                            <input type="number" id="release-date" step="1" required >
+                                        </p>
+                                        <p>
+                                            <label for="game-rank">Rank: </label>
+                                            <input type="number" id="game-rank" step="1" required>
+                                        </p>
+                                        <p>
+                                            <label for="price">Price:</label>
+                                            <input type="text" id="price" required>
+                                        </p>
+                                        <p>
+                                            <button type="submit">Submit</button>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            </div>
             <div id="divider">
                 <div id="filter">
                     <ul id="genres">
@@ -45,6 +94,7 @@
                     </ul>
                 </div>
                 <div id="main-items">
+                    <p id="add-item">+</p>
                     <div id="item-list"></div>
                     <div id="page-changer">
                         <button id="prev">Previous</button>

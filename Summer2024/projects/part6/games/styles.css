@@ -76,6 +76,22 @@ li {
 #main-items {
     flex: 4;
 }
+
+#add-item {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: 3%;
+    margin-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    text-align: right;
+    font-size: 24px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    user-select: none;
+}
 #item-list {
     display: flex;
     flex-direction: column;
@@ -125,7 +141,36 @@ li {
     border-radius: 10px;
 }
 
-
+/* Modal */
+.w3-container {
+    background-color: var(--secondary-color);
+}
+form {
+    margin: 0 2%;
+}
+  
+form label {
+    display: block;
+}
+#modal-divider {
+    display: flex;
+    flex-direction: row;
+}
+#image-interaction {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: grey;
+}
+#image-interaction img {
+    padding: 10px;
+    width: 200px;
+    height: 300px;
+}
+#text-interaction {
+    margin-top: auto;
+    margin-left: 5%;
+}
 /* Typography */
 
 

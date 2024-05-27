@@ -10,37 +10,59 @@
     <body>
         <nav>
             <div id="nav-bar">
-                <a id="link-home" class="nav-item" href="#">Board at Home</a>
-                <a id="link-games" class="nav-item" href="games/index.html">Games</a>
-                <a id="link-discover" class="nav-item" href="game-item/index.html">Discover a new game</a>
-                <a id="link-forums" class="nav-item" href="forums/index.html">Forums</a>
-                <a id="link-contact-me" class="nav-item" href="contact/contactme.html">Contact Me</a>
+                <a id="link-home" class="nav-item" href="../index.html">Board at Home</a>
+                <a id="link-games" class="nav-item" href="../games/index.html">Games</a>
+                <a id="link-discover" class="nav-item" href="../game-item/index.html">Discover a new game</a>
+                <a id="link-forums" class="nav-item" href="../forums/index.html">Forums</a>
+                <a id="link-contact-me" class="nav-item" href="#">Contact Me</a>
             </div>
         </nav>
         
         <content>
             <div id="main-content">
                 <h1>Contact Us!</h2>
-                <form id="form-contact">
-                    <p>
-                        <label for="name">Name:</label>
-                        <input
-                        type="text"
-                        id="sender-name"
-                        name="sender-name"
-                        required
-                        minlength="3"
-                        />
-                    </p>
-                    <p>
-                        <label for="subject">Subject:</label>
-                        <input type="text" name="subject" id="subject">
-                    </p>
-                    <p>
-                        <label for="content>">Content:</label>
-                        <input type="text" name="content" id="content">
-                    </p>
-                </form>
+                    <form
+                    id="contact-form"
+                    action="https://api.web3forms.com/submit"
+                    method="POST"
+                    >
+                        <input type="hidden" name="access_key" value="c003858d-f28d-4395-91b8-ac3692c21de7" />
+            
+                        <p>
+                            <label for="name">Name:</label>
+                            <input
+                                id="name"
+                                type="text"
+                                placeholder="First and Last"
+                                name="name"
+                                required
+                            />
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input id="email" type="email" name="email" placeholder="example@email.com" required />
+                        </p>
+                        <p>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" placeholder="Let us know what you think!" required></textarea>
+                        </p>
+                            <input
+                            type="hidden"
+                            name="redirect"
+                            value="https://web3forms.com/success"
+                            />
+                            <input
+                            type="hidden"
+                            name="subject"
+                            value="Contact from Jaspers Website"
+                            />
+                            <input type="hidden" name="from_name" value="My Website" />
+                        <p>
+                            <button type="submit">Submit Form</button>
+                        </p>
+            
+                        <p id="result"></p>
+                    </form>
             </div>
             
         </content>
