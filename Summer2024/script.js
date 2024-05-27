@@ -160,6 +160,12 @@ window.onload = () => {
         "project4.png",
         "Created JSON file to store relevent data and populate rather than hard coded data."
     ));
+    projects.push(new Project(
+        "Project 6 - Client Side Form Validation and JavaScript",
+        "projects/part6/index.html",
+        "project4.png",
+        "Created forms for contact and additional data entry as well as Iframe inclusion."
+    ));
 
 
     for (let i in assignments) {
