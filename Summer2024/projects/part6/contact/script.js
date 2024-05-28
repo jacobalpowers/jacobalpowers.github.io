@@ -41,15 +41,17 @@ const getEmailResult = async () => {
 
 document.getElementById("contact-form").onsubmit = showEmailResult;*/
 
-document.getElementById("contact-form").onsubmit = async(e) => {
-    e.preventDefault();
+window.onload = () => {
+    document.getElementById("contact-form").onsubmit = async(e) => {
+        e.preventDefault();
 
-    const result = document.getElementById("result");
-    let response = await getEmailResult();
+        const result = document.getElementById("result");
+        let response = await getEmailResult();
 
-    if(response.status == 200){
-        result.innerHTML = "Email successfully sent";
-    } else {
-        result.innerHTML = "Sorry, your email was not sent";
+        if(response.status == 200){
+            result.innerHTML = "Email successfully sent";
+        } else {
+            result.innerHTML = "Sorry, your email was not sent";
+        }
     }
 }
