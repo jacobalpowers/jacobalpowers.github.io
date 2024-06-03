@@ -172,6 +172,12 @@ window.onload = () => {
         "project4.png",
         "Reformatted page into React."
     ));
+    projects.push(new Project(
+        "Project 9 - Server Side JSON",
+        "https://jacobalpowers.github.io/react-project/",
+        "project4.png",
+        "Reformatting JSON to be accessable from server and not locally<br><a href=\"https://github.com/jacobalpowers/react-project\">Github Front End</a><br><a href=\"https://github.com/jacobalpowers/board-at-home-backend\">Github Back End</a>"
+    ));
 
 
     for (let i in assignments) {
