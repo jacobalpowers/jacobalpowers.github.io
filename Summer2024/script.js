@@ -166,6 +166,12 @@ window.onload = () => {
         "project4.png",
         "Created forms for contact and additional data entry as well as Iframe inclusion."
     ));
+    projects.push(new Project(
+        "Project 8 - React Site",
+        "projects/part8/index.html",
+        "project4.png",
+        "Reformatted page into React."
+    ));
 
 
     for (let i in assignments) {
