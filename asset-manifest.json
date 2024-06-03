@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Summer2024/projects/part8/react-project/static/css/main.d893dca8.css",
+    "main.js": "/Summer2024/projects/part8/react-project/static/js/main.7fe16577.js",
+    "index.html": "/Summer2024/projects/part8/react-project/index.html",
+    "main.d893dca8.css.map": "/Summer2024/projects/part8/react-project/static/css/main.d893dca8.css.map",
+    "main.7fe16577.js.map": "/Summer2024/projects/part8/react-project/static/js/main.7fe16577.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d893dca8.css",
+    "static/js/main.7fe16577.js"
+  ]
+}
