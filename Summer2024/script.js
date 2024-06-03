@@ -168,7 +168,7 @@ window.onload = () => {
     ));
     projects.push(new Project(
         "Project 8 - React Site",
-        "projects/part8/index.html",
+        "projects/part8/react-project",
         "project4.png",
         "Reformatted page into React."
     ));
