@@ -128,6 +128,7 @@ window.onload = () => {
         "assignments/assignment12/index.html", 
         "assignment12.png", 
         "Basic JSON file parsing and fetching information from an external database."));
+    
 
 
     projects.push(new Project(
@@ -178,7 +179,12 @@ window.onload = () => {
         "project4.png",
         "Reformatting JSON to be accessable from server and not locally<br><a href=\"https://github.com/jacobalpowers/react-project\">Github Front End</a><br><a href=\"https://github.com/jacobalpowers/board-at-home-backend\">Github Back End</a>"
     ));
-
+    projects.push(new Project(
+        "Project 17 - Server Edit and Delete", 
+        "https://jacobalpowers.github.io/react-project/", 
+        "project4.png", 
+        "Adding edit and delete functionality to project.<br><a>https://github.com/jacobalpowers/react-project</a><br><a>https://github.com/jacobalpowers/board-at-home-backend</a>"
+    ));
 
     for (let i in assignments) {
         assignmentList.append(assignments[i].formatted);
