@@ -185,6 +185,12 @@ window.onload = () => {
         "project4.png", 
         "Adding edit and delete functionality to project.<br><a>https://github.com/jacobalpowers/react-project</a><br><a>https://github.com/jacobalpowers/board-at-home-backend</a>"
     ));
+    projects.push(new Project(
+        "Project 18 - Server CRUD with MongoDB", 
+        "https://jacobalpowers.github.io/react-project/", 
+        "project4.png", 
+        "Retrofitted database to contact MongoDB.<br><a>https://github.com/jacobalpowers/react-project</a><br><a>https://github.com/jacobalpowers/board-at-home-backend</a>"
+    ));
 
     for (let i in assignments) {
         assignmentList.append(assignments[i].formatted);
