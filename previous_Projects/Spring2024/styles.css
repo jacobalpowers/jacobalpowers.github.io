@@ -1,8 +1,8 @@
 /** Structure **/
 body {
-    background-color: #084700;
+    background-color: #EBEBEB;
     font-family: Arial, Helvetica, sans-serif;
-    color: #FFD700;
+    color: cornflowerblue;
 }
 h1 {
     text-align: center;
@@ -18,13 +18,11 @@ a {
 #assignments {
     display: flex;
     flex-wrap: wrap;
-    background-color: #6F612E;
-    border-radius: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
+    
+    
 }
 .assignment-item {
-    background-color: #660033;
+    background-color: #CAD2C5;
     flex: 3 0 30%;
     margin: 5px;
     padding: 2px;
@@ -33,7 +31,6 @@ a {
     max-width: 350px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
 }
 .assignment-item img {
     width: 300px;

@@ -1,0 +1,73 @@
+/** Variables & Declarations **/
+:root {
+    --main-bg-color: #1A3E24;
+    --section-color: #6F612E;
+    --text-color: #FFD700;
+}
+
+@font-face {
+    font-family: 'Modern Ancient';
+    src: url("../fonts/ModernAntiqua-Regular.ttf");
+}
+
+/** Structure **/
+
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    font: 'Modern Ancient';
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    padding: 5px 0px;
+    margin: 3% 10%;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 5px 0px;
+    border-bottom: black 3px solid;
+}
+#nav-bar h3 {
+    flex: 1;
+    width: fit-content;
+    font-size: 16px;
+}
+
+#home {
+    display: flex;
+}
+
+#about_us {
+    display: none;
+}
+
+#wedding_timeline {
+    display: none;
+}
+
+#pintrest {
+    display: none;
+}
+
+#rsvp_form {
+    display: none;
+}
+
+
+/** Navigation **/
+
+
+/** Displays **/
+
