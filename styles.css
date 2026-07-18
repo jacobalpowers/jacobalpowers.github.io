@@ -32,42 +32,28 @@ h2 {
     padding: 5px 0px;
 }
 
-#nav-bar {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    padding: 5px 0px;
-    border-bottom: black 3px solid;
-}
-#nav-bar h3 {
-    flex: 1;
-    width: fit-content;
-    font-size: 16px;
-}
 
-#home {
-    display: flex;
-}
 
-#about_us {
-    display: none;
-}
 
-#wedding_timeline {
-    display: none;
-}
-
-#pintrest {
-    display: none;
-}
-
-#rsvp_form {
-    display: none;
-}
 
 
 /** Navigation **/
 
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-top: black 3px solid;
+    border-bottom: black 3px solid;
+}
+#nav-bar a {
+    flex: 1;
+    width: fit-content;
+    font-size: 20px;
+    padding: 10px 0px;
+    text-decoration: none;
+    color: var(--text-color);
+}
 
 /** Displays **/
 
