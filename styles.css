@@ -97,12 +97,15 @@ h5 {
 
 #time-block h4 {
     flex: 1;
+    display: flex;
     font-size: 30px;
-    text-align: center;
+    align-items: center;
 }
 
 #time-block p {
     flex: 1;
+    display: flex;
+    align-items: center;
 }
 
 #schedule {
@@ -129,6 +132,7 @@ h5 {
 #buttons {
     display: flex;
     flex-direction: row;
+    margin: var(--padding-height) 0 0;
 }
 
 #button {
