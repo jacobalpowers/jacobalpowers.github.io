@@ -2,7 +2,9 @@
 :root {
     --main-bg-color: #1A3E24;
     --section-color: #6F612E;
-    --text-color: #FFD700;
+    --text-color: #f8f4ef;
+    --margin-size: 14%;
+    --padding-height: 4%;
 }
 
 @font-face {
@@ -14,17 +16,28 @@
 
 
 body {
-    background-color: var(--main-bg-color);
-    color: var(--text-color);
-    font: 'Modern Ancient';
-    width: 70%;
-    margin: 0 16%;
+    margin: 0;
+    font-family: "Modern Ancient";
+    display: flex;
+    flex-direction: column;
+}
+
+content {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    flex: 1;
+    padding: var(--padding-height) var(--margin-size);
 }
 
 h1 {
-    font-size: 60px;
+    font-family: 'Cormorant Garamond',serif;
+    font-size: 90px;
+    font-weight: 300;
     text-align: center;
-    padding: 5px 0px;
+    margin: 5px 0;
 }
 
 h2 {
@@ -37,7 +50,6 @@ h2 {
 h3 {
     font-size: 25px;
     text-align: center;
-    margin: 5px 0;
 }
 
 h5 {
@@ -46,9 +58,34 @@ h5 {
     margin: 5px 0;
 }
 
-content {
+#information {
+    background-image: linear-gradient(to bottom,rgba(20,15,10,.35) 0%,rgba(20,15,10,.25) 40%,rgba(20,15,10,.55) 100%),url('wedding-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    flex: 1;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+}
+
+#information_text {
+    min-width: 80vw;
+}
+
+#split {
+    display: flex;
+    flex-direction: row;
+}
+
+#split h3{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #time-block {
@@ -68,6 +105,44 @@ content {
     flex: 1;
 }
 
+#schedule {
+    background-color: #f0ebe3;
+}
+#about_us {
+    background-color: #f8f4ef;
+}
+
+#places_to_stay {
+    background-color: #f0ebe3;
+}
+
+#split div {
+    flex: 1;
+    text-align: center;
+}
+
+#pintrest_rsvp {
+    background-color: #2c2c2c;
+    color: var(--text-color);
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+#button {
+    flex: 1;
+    border: 1px solid #c9a86c;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    margin: 0px auto;
+    background-color: rgba(201,168,108,.85);
+    max-width: 144px;
+}
 
 
 iframe {
@@ -79,10 +154,15 @@ iframe {
 }
 
 
-/** Navigation **/
-#menu_options {
-    
+footer {
+    background: #111;
+    text-align: center;
+    margin: 0;
+    padding: 0 var(--margin-size);
+    color: var(--text-color);
 }
+
+/** Navigation **/
 
 #nav-bar {
     display: flex;
