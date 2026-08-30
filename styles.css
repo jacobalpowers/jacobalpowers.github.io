@@ -7,10 +7,10 @@
     --padding-height: 4%;
 }
 
-@font-face {
+/*@font-face {
     font-family: 'Modern Ancient';
-    src: url("../fonts/ModernAntiqua-Regular.ttf");
-}
+    src: url("/fonts/ModernAntiqua-Regular.ttf");
+}*/
 html {
     scroll-behavior: smooth;
 }
@@ -20,7 +20,7 @@ html {
 
 body {
     margin: 0;
-    font-family: "Modern Ancient";
+    /**font-family: "Modern Ancient";**/
     display: flex;
     flex-direction: column;
 }
