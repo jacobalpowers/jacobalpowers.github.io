@@ -79,6 +79,10 @@ h5 {
     min-width: 80vw;
 }
 
+#information #buttons {
+    margin: 4% 20%;
+}
+
 #split {
     display: flex;
     flex-direction: row;
@@ -182,7 +186,7 @@ h5 {
 }
 
 #pintrest_rsvp {
-    background-color: var(--main-bg-color);
+    background-color: #1e3c1f;
     color: var(--text-color);
 }
 
