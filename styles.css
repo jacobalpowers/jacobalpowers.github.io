@@ -164,6 +164,27 @@ h5 {
     padding-bottom: 4%;
 }
 
+#collage {
+    display: none;
+    align-items: center;
+}
+
+#collage img {
+    flex: 1;
+    margin-left: 4%;
+}
+
+#vert_image {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+#vert_image img {
+    flex: 1;
+    min-width: auto;
+}
+
 #about_us img {
     flex: 1;
     max-width: 30%;
